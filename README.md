@@ -10,5 +10,5 @@ Projects for Design 117 - Interactive Media I
 ## 4/11/19
 [Index site for Design Space](https://www.matthewkwong.com/design117/index.html)
 
-## 4/6/19
+## 4/16/19
 [Lemmings Site](https://www.matthewkwong.com/design117/lemmings/index.html)
