@@ -1,0 +1,20 @@
+
+		body{
+			color: red; font-family: arial;
+		}
+
+		p{
+			line-height: 2em;
+		}
+
+		.special{
+			color:green;
+		}
+
+		#extraspecial{
+			color:orange;
+		}
+
+		section p{
+			color:purple;
+		}
