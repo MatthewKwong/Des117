@@ -1,0 +1,90 @@
+article {
+  padding:10px 40px 40px 40px;
+  width: 700px;
+  margin: auto;
+  background-color: white;
+}
+
+body{
+  background-color:#D1AE5B;
+  font-family: 'Gudea', sans-serif;
+}
+
+
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 3em;
+}
+
+h2{
+  font-family: 'Asap Condensed', sans-serif;
+  color:#434343;
+}
+
+nav ul li a{
+  font-size: 16px;
+  color: #2B2B2B;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color:#696969;
+}
+
+nav ul {
+  background-color: #F6DFA2;
+  padding:14px;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline;
+  padding:14px;
+}
+
+article h2{
+  padding:10px;
+  line-height: 1px;
+}
+
+article p{
+  padding:10px;
+  line-height: 1.5em;
+}
+
+.introduction{
+  margin-bottom: 20px;
+  padding:10px;
+  background-color:#fbecc5;
+}
+#description{
+  margin-bottom: 20px;
+  padding:10px;
+  background-color:#fbecc5;
+}
+#behavior{
+  margin-bottom: 20px;
+  padding:10px;
+  background-color:#fbecc5;
+}
+#misconceptions{
+  margin-bottom: 20px;
+  padding:10px;
+  background-color:#fbecc5;
+}
+
+#culture{
+  padding:10px;
+  background-color:#fbecc5;
+}
+
+footer{
+  text-align: center;
+}
+
+footer a{
+  color: #696969;
+  text-decoration: none;
+}
