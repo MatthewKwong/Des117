@@ -15,3 +15,18 @@ header img {
 a{
   text-decoration: none;
 }
+
+#inner-container{
+  width: 700px;
+  margin: auto;
+}
+
+#container{
+  background-color:white;
+  border: solid 1px black;
+  margin: 0px 200px 0px 200px ;
+}
+
+#container footer{
+  text-align: center;
+}
