@@ -12,3 +12,9 @@ Projects for Design 117 - Interactive Media I
 
 ## 4/16/19
 [Lemmings Site](https://www.matthewkwong.com/design117/lemmings/index.html)
+
+## 4/18/19
+[Article Markup](https://www.matthewkwong.com/design117/article/index.html)
+
+## 4/22/19
+[CSS Backgrounds](https://www.matthewkwong.com/design117/css-backgrounds/index.html)
