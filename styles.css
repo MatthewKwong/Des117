@@ -1,4 +1,5 @@
 body{
+  /* background-color: #95BDC1; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,14 +19,17 @@ a{
   text-decoration: none;
 }
 
+
+
+
 #inner-container{
   width: 700px;
   margin: auto;
 }
 
 #container{
-  background-color:white;
-  border: solid 1px black;
+  /* background-color:white; */
+  /* border: solid 1px black; */
   margin: 0px 200px 0px 200px ;
 }
 
