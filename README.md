@@ -18,3 +18,6 @@ Projects for Design 117 - Interactive Media I
 
 ## 4/22/19
 [CSS Backgrounds](https://www.matthewkwong.com/design117/css-backgrounds/index.html)
+
+## 4/25/19
+[Float Examples](https://www.matthewkwong.com/design117/floatExamples/index.html)
