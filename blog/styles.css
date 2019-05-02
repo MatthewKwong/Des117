@@ -95,21 +95,21 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
   /* left: 0px; */
   /* width:50%; */
   /* float: left; */
   border: solid 2px orange;
   /* display: block; */
-  height:100% !important;
+  min-height:100vh;
   /* border: solid 2px orange; */
 }
 
 img{
-  margin-top: -25%;
-  max-width: 100%;
+  /* margin-top: -25%; */
+  max-width: 50%;
   height:auto;
-  width:500px;
+  width:auto;
 }
 
 .left-blue{
