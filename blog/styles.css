@@ -67,7 +67,7 @@ h2{
 
 p{
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -110,10 +110,11 @@ time{
   border: 10px solid #282b2d;
 }
 
+
 #unitrans{
   display: block;
   margin: 0 auto;
-  margin-top:20%;
+  margin-top:15%;
   border: 10px solid #282b2d;
 }
 
@@ -143,8 +144,8 @@ footer{
   width: 100%;
   position: fixed;
   bottom: 0;
-  background-color: #DCDCDC;
-  color:black;
+  background-color: #282b2d;
+  color:white;
   font-family: 'Roboto', sans-serif;
   display: inline-block;
 }
@@ -152,29 +153,53 @@ footer{
 li{
   list-style-type: none;
 }
+
+
 footer a{
-  color:black;
+  color:white;
   text-decoration: none;
 }
 
-footer a:hover{
-  color:#606060;
+footer a:visited{
+  color:white;
   text-decoration: none;
 }
 
 #side-buttons #previous{
+  clear:both;
+  /* border: solid 2px red; */
   position: absolute;
   left: 30px;
   float: right;
+  width : 100px;
+  padding:20px;
+  top:0;
+  left:0;
 }
+
+#side-buttons #previous:hover{
+  background-color:#606060;
+    color:white;
+
+}
+
+#side-buttons #next:hover{
+  background-color:#606060;
+  color:white;
+}
+
 
 #side-buttons #next{
   position: absolute;
-  right: 30px;
-  float: right;
+  float: left;
+  width : 100px;
+  padding:20px;
+  top:0;
+  right:-20px;
 }
 
 #validator{
+  top: 20px;
   left: 0;
   right: 0;
   position: absolute;
