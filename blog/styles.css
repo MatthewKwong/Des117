@@ -15,7 +15,7 @@ body{
 }
 
 h1 a{
-  color:white
+  color:white;
   text-decoration: none;
 }
 
@@ -81,15 +81,35 @@ time{
   top:95px;
 }
 
+#container{
+  display: flex;
+}
+
+section{
+  width: 50%;
+}
+
 .left-outline{
-  /* background-color: #23b5d3; */
-  height: 100%;
+  background-color: #23b5d3;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 0px;
-  width:50%;
-  float: left;
+  /* left: 0px; */
+  /* width:50%; */
+  /* float: left; */
+  border: solid 2px orange;
+  /* display: block; */
+  height:100% !important;
   /* border: solid 2px orange; */
-  display: block;
+}
+
+img{
+  margin-top: -25%;
+  max-width: 100%;
+  height:auto;
+  width:500px;
 }
 
 .left-blue{
@@ -105,9 +125,11 @@ time{
 }
 
 #futureTech{
-  display: block;
+  /* display: block;
   margin: 0 auto;
-  margin-top:15%;
+  margin-top:15%; */
+  /* max-width: 100%; */
+  /* max-height: 100%; */
   border: 10px solid #282b2d;
 }
 
@@ -120,10 +142,13 @@ time{
 }
 
 #right-outline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   margin-top: 5%;
   right:0px;
-  width: 50%;
+  /* width: 50%; */
   height: 65%;
   float: right;
   overflow: scroll;
@@ -140,7 +165,7 @@ time{
 }
 
 footer{
-  /* border: solid 2px blue; */
+  border: solid 2px blue;
   height: 50px;
   width: 100%;
   position: fixed;
