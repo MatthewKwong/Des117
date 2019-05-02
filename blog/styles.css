@@ -137,9 +137,9 @@ img{
 
 
 #unitrans{
-  display: block;
+  /* display: block;
   margin: 0 auto;
-  margin-top:15%;
+  margin-top:15%; */
   border: 10px solid #282b2d;
 }
 
