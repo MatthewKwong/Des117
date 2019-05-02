@@ -4,6 +4,10 @@ body{
 }
 
 #logo{
+  position: fixed;
+  left: -30px;
+  right: 0;
+  /* border: solid 2px white; */
   text-align: center;
   padding:4px;
   margin-top: -10px;
@@ -19,8 +23,16 @@ h1 a:visited{
   color:white;
 }
 
-#kwong{
-  color:#23b5d3;
+#blue{
+  color: #23b5d3;
+}
+
+#yellow{
+  color: #e2c044;
+}
+
+#green{
+  color: #3f696d;
 }
 
 nav{
@@ -37,9 +49,20 @@ h1{
 }
 
 h2{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.blue-contents h2{
   color:#23b5d3;
+}
+
+.yellow-contents h2{
+  color:#e2c044;
+}
+
+.green-contents h2{
+  color:#3f696d;
 }
 
 p{
@@ -57,8 +80,8 @@ time{
   top:95px;
 }
 
-#left-outline{
-  background-color: #23b5d3;
+.left-outline{
+  /* background-color: #23b5d3; */
   height: 100%;
   position: absolute;
   left: 0px;
@@ -68,7 +91,26 @@ time{
   display: block;
 }
 
-#article{
+.left-blue{
+  background-color: #23b5d3;
+}
+
+.left-yellow{
+  background-color: #e2c044;
+}
+
+.left-green{
+  color:#3f696d;
+}
+
+#futureTech{
+  display: block;
+  margin: 0 auto;
+  margin-top:15%;
+  border: 10px solid #282b2d;
+}
+
+#unitrans{
   display: block;
   margin: 0 auto;
   margin-top:20%;
@@ -120,7 +162,6 @@ footer a:hover{
   text-decoration: none;
 }
 
-
 #side-buttons #previous{
   position: absolute;
   left: 30px;
@@ -134,7 +175,6 @@ footer a:hover{
 }
 
 #validator{
-
   left: 0;
   right: 0;
   position: absolute;

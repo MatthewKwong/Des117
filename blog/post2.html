@@ -11,7 +11,7 @@
     <header>
       <nav>
         <ul>
-          <h1 id = "logo"><a href = "index.html">MATTHEW <span id = "kwong">KWONG</span></a></h1>
+          <h1 id = "logo"><a href = "index.html">MATTHEW <span id = "blue">KWONG</span></a></h1>
           <li><a href = "post1.html">Previous Post</a></li>
           <li><a href = "index.html">Home</a></li>
           <li><a href = "#">Next Post</a></li>
@@ -19,25 +19,25 @@
       </nav>
     </header>
 
-    <section id = "left-outline">
+    <!--Using class instead of ID because CSS will be used for ALL blog posts-->
+    <section class = "left-outline left-blue">
       <div id = "left-contents">
         <a href = "../article/index.html">
-          <img id = "article" src = "images/article.jpg" alt = "blog post outline" width = "800" height = "422">
+          <img id = "unitrans" src = "images/article.jpg" alt = "image of Article project" width = "800" height = "422">
         </a>
       </div>
     </section>
 
     <section id = "right-outline">
-      <article id = "right-contents">
-        <h1>Blog 2</h1>
+      <article id = "right-contents" class = "blue-contents">
+        <h1>Blog Post 2</h1>
         <time datetime="2019-05-01">May 1, 2019</time>
 
-        <h2>Semantic HTML: Elements used and how they help describe
-           the structure of the content:</h2>
+        <h2>Semantic HTML - Elements used and how they describe the structure's content:</h2>
         <p>I chose to nest section for each individual subtopic under an article
           tag so that it's easier to go through the code later on and recognize where each
           subtopic begins. My format goes as followed: article, div, header, nav,
-          section ,footer. I chose this layout because I believe it was the most
+          section, footer. I chose this layout because I believe it was the most
           it's the most clear and concise way of displaying information and
           easiest way to navigate through the page to the reader.</p>
 
