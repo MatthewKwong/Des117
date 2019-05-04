@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Blog Post 2: Article</title>
@@ -20,47 +20,46 @@
     </header>
 
     <!--Using class instead of ID because CSS will be used for ALL blog posts-->
+
     <div id = "container">
+      <section class = "left-outline left-yellow">
+        <img id = "unitrans" src = "images/article.jpg" alt = "future of tech graphic" width = "500" height = "500">
+      </section>
 
-      <div id = "container">
-        <section class = "left-outline left-yellow">
-            <img id = "futureTech" src = "images/futureTech.jpg" alt = "future of tech graphic" width = "500" height = "500">
-        </section>
+      <section id = "right-outline">
+        <article id = "right-contents" class = "yellow-contents">
+            <h1>II Redesigning An Article</h1>
+          <time datetime="2019-05-01">May 1, 2019</time>
 
-    <section id = "right-outline">
-      <article id = "right-contents" class = "yellow-contents">
-        <h1>Blog Post 2</h1>
-        <time datetime="2019-05-01">May 1, 2019</time>
+          <h2>Semantic HTML - Elements used and how they describe the structure's content:</h2>
+          <p>I chose to nest section for each individual subtopic under an article
+            tag so that it's easier to go through the code later on and recognize where each
+            subtopic begins. My format goes as followed: article, div, header, nav,
+            section, footer. I chose this layout because I believe it was the most
+            it's the most clear and concise way of displaying information and
+            easiest way to navigate through the page to the reader.</p>
 
-        <h2>Semantic HTML - Elements used and how they describe the structure's content:</h2>
-        <p>I chose to nest section for each individual subtopic under an article
-          tag so that it's easier to go through the code later on and recognize where each
-          subtopic begins. My format goes as followed: article, div, header, nav,
-          section, footer. I chose this layout because I believe it was the most
-          it's the most clear and concise way of displaying information and
-          easiest way to navigate through the page to the reader.</p>
+          <h2>What are you experimenting with and trying to achieve:</h2>
+          <p>In my article, I was trying to achieve the look of a mix between
+          a New York Times article and a blog. To do this I used similar fonts to
+          the news corporation especially when it came to using blockquotes to
+          quote something. Additionaly, I added a navbar at the top of the page to
+          help navigate through the page and added a hover effect on it to clearly
+          show the user what section they would view if they clicked the tab they
+          hovered on. In terms of visual images, I created a vector art bus in
+          Adobe Illustrator to keep it consistant with the fonts I used throughout
+          the article. If I were to redo this project I would want to make it more
+          modern and not have everything in a one vertical column, but rather
+          section off each subheading to its own space.</p>
 
-        <h2>What are you experimenting with and trying to achieve:</h2>
-        <p>In my article, I was trying to achieve the look of a mix between
-        a New York Times article and a blog. To do this I used similar fonts to
-        the news corporation especially when it came to using blockquotes to
-        quote something. Additionaly, I added a navbar at the top of the page to
-        help navigate through the page and added a hover effect on it to clearly
-        show the user what section they would view if they clicked the tab they
-        hovered on. In terms of visual images, I created a vector art bus in
-        Adobe Illustrator to keep it consistant with the fonts I used throughout
-        the article. If I were to redo this project I would want to make it more
-        modern and not have everything in a one vertical column, but rather
-        section off each subheading to its own space.</p>
-
-        <h2>Most challenging part of visual design:</h2>
-        <p>While working on this project, I think the hardest part for me in terms of
-        visual design was choosing the best font possible and making sure that
-        my headings and paragraphs were clearly distinguishable from one another
-        through typography and font weights.</p>
-      </article>
-    </section>
-  </div>
+          <h2>Most challenging part of visual design:</h2>
+          <p>While working on this project, I think the hardest part for me in terms of
+          visual design was choosing the best font possible and making sure that
+          my headings and paragraphs were clearly distinguishable from one another
+          through typography and font weights.</p>
+        </article>
+      </section>
+    </div>
 
 
     <footer>
@@ -69,7 +68,6 @@
         <li><a href = "post1.html" id = "previous">Previous Post</a></li>
         <li><a href = "post3.html" id = "next">Next Post</a></li>
       </ul>
-
     </footer>
   </body>
 </html>
