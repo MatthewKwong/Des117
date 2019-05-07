@@ -1,5 +1,29 @@
-@@media query {
+@media (max-width: 799px){
+  p{
+    font-size: 8px;
+  }
+}
 
+@media (max-width: 499px){
+  body{
+    overflow-y: scroll;
+  }
+  .left-outline{
+    width:100%;
+    height: 300px;
+    float:none;
+  }
+  #right-outline{
+    top:100%;
+    width:100%;
+    height:auto;
+    float:none;
+    overflow-y: hidden;
+  }
+
+  p{
+    font-size: 12px;
+  }
 }
 
 body{
@@ -10,6 +34,7 @@ body{
 #logo{
   position: fixed;
   left: -30px;
+  /* left:0; */
   right: 0;
   /* border: solid 2px white; */
   text-align: center;
