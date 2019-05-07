@@ -53,11 +53,12 @@ h1{
   /* color:#23b5d3; */
 }
 
-h2{
-  font-family: 'Lato', sans-serif;
+h2, h3{
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
+/*Font Color*/
 .blue-contents h2{
   color:#23b5d3;
 }
@@ -67,6 +68,22 @@ h2{
 }
 
 .green-contents h2{
+  color:#3f696d;
+}
+
+/*Links*/
+.blue-contents a{
+  font-weight: 500;
+  color:#23b5d3;
+}
+
+.yellow-contents a{
+  font-weight: 500;
+  color:#e2c044;
+}
+
+.green-contents a{
+  font-weight: 500;
   color:#3f696d;
 }
 
@@ -165,9 +182,22 @@ section{
   display: block;
 }
 
-img{
+#left-outline img{
   width:75%;
   height:auto;
+}
+
+
+#right-outline img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  width:75%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #right-outline::-webkit-scrollbar {
