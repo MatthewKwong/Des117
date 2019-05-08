@@ -1,9 +1,23 @@
 body{
   background-color:white;
-  overflow-y: hidden;
+}
+
+nav ul li {
+    display: none;
+}
+
+
+nav{
+  position: fixed;
+  margin: auto 0;
+  background-color: #282b2d;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
 }
 
 #logo{
+  z-index: 2;
   position: fixed;
   left: -30px;
   /* left:0; */
@@ -11,16 +25,18 @@ body{
   /* border: solid 2px white; */
   text-align: center;
   padding:4px;
-  margin-top: 0;
+  margin-top: 4px;
   color:white;
 }
 
-nav h1{
+.left-outline a{
 
+  text-align: center;
 }
 
 h1 a{
-  font-family: Arial Black;
+  font-weight: 900;
+  font-family: 'Arial Black' 'Arial Bold', Gadget, sans-serif;
   color:white;
   text-decoration: none;
 }
@@ -42,15 +58,6 @@ h1 a:visited{
   color: #3f696d;
 }
 
-nav{
-  z-index: 1;
-  position: fixed;
-  margin: auto 0;
-  top:0;
-  background-color: #282b2d;
-  height: 50px;
-  width: 100%;
-}
 
 h1{
   font-family: 'Roboto', sans-serif;
@@ -119,12 +126,6 @@ section{
 
 .left-outline{
   background-color: #23b5d3;
-  /* height: 100%; */
-  /* position: absolute; */
-  /* left: 0px; */
-  /* width:50%; */
-  /* float: left; */
-  /* display: block; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,19 +153,10 @@ section{
 }
 
 #futureTech{
-  /* display: block;
-  margin: 0 auto;
-  margin-top:15%; */
-  /* max-width: 100%; */
-  /* max-height: 100%; */
   border: 10px solid #282b2d;
 }
 
-
 #unitrans{
-  /* display: block;
-  margin: 0 auto;
-  margin-top:15%; */
   border: 10px solid #282b2d;
 }
 
@@ -172,18 +164,36 @@ section{
   border: 10px solid #282b2d;
 }
 
+/*Had to use this to cheat way through of having the scroll types
+switch whent he screen size was on mobile. On web I have it so the
+right page content is scrollable, but the page itself is not.*/
+@media (min-width: 799px){
+  body{
+    overflow-y: hidden;
+  }
+  #right-outline{
+    overflow-y: scroll;
+  }
+}
 
-@media (max-width: 499px){
+@media (max-width: 799px){
 
   body::-webkit-scrollbar {
     display: none;
   }
-  body{
-    overflow-y: scroll;
+
+  time{
+    font-size: 16px;
+    top:0px;
+    right:  0px;
+    left:  0px;
+    text-align: center;
   }
+
   p{
     font-size: 15px;
   }
+
 
   .left-outline{
     width:100%;
@@ -197,15 +207,20 @@ section{
     width:100%;
     float:none;
     /* overflow-y: hidden; */
-    clear: both;
+  }
+
+  #right-contents p img{
+    display: none;
+  }
+
+  .left-outline img{
+    /* margin-top: -10%; */
+    max-width: 80%;
+    height:auto;
+    width:auto;
   }
 }
 
-
-@media (min-width:499px){
-#right-outline{
-  overflow-y: scroll;
-}
 
 #right-outline{
   display: flex;
@@ -214,11 +229,14 @@ section{
   position: absolute;
   margin-top: 10%;
   right:0px;
-  /* width: 50%; */
   height: 65%;
-  /* float: right; */
+  /* overflow: scroll; */
   /* border: solid 2px red; */
   display: block;
+}
+
+#right-contents{
+  padding: 20px 60px 60px 60px;
 }
 
 #right-outline::-webkit-scrollbar {
@@ -243,9 +261,7 @@ section{
   margin-right: auto;
 }
 
-#right-contents{
-  padding:60px;
-}
+
 
 footer{
   /* border: solid 2px blue; */
