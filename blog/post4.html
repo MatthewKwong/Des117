@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Blog Post 4: Mobile and Desktop Design</title>
+  </head>
+  <body>
+    <header>
+      <h1 id = "logo"><a href = "index.html">MATTHEW <span id = "blue">KWONG</span></a></h1>
+      <nav>
+        <ul>
+          <li><a href = "post3.html">Previous Post</a></li>
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "#">Next Post</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Using class instead of ID because CSS will be used for ALL blog posts-->
+
+    <div id = "container">
+
+        <section class = "left-outline left-blue">
+          <img id = "futureTech" src = "images/mobileDesktop.jpg" alt = "mobile and desktop articles" width = "500" height = "500">
+      </section>
+
+      <section id = "right-outline">
+        <article id = "right-contents" class = "blue-contents">
+          <h1>IV Mobile and Desktop Design</h1>
+          <time datetime="2019-05-07">May 7, 2019</time>
+
+          <h2>What I've Learned About Mobile/Desktop Design:</h2>
+          <p>In the article
+          <i><a href = "https://99designs.com/blog/web-digital/desktop-vs-mobile-app-design/">
+          Desktop vs. mobile app design: how to optimize your user experience</a></i>
+          by Matt Ellis, he writes about going mobile-first is a better way of designing a web page because it is easier to add content
+          than it is to remove content on a screen. Additionally, it is best to have sites taht are similar
+          on BOTH platforms. From this article I've learned to prioritize elements and making sure key information is being displayed.
+          </p>
+
+          <p>Next, in
+          <a href = "https://www.smashingmagazine.com/2019/05/svg-design-tools-practical-guide/"><i>A Practical Guide To SVG And Design Tools</i></a>
+          by Mikołaj Dobrucki, Dobrucki writes about making SVG - scalable vector graphics in HTML and CSS. He goes through
+          how to make different shapes and designs using (x,y) coordinates. Using this new found knowledge I
+          plan on implementing vector graphic shapes on to the background of my main blog page. He also talks about using fill strokes and
+          combining text and box shadows to enhance the depth of the shapes you make.
+          <img src = "https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_1200/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d666f4b9-a1ed-4281-83f0-554d49b33770/rectangle-shadow.png" alt = "red square with shadow">
+          Dobrucki also shows how you can export basic shapes from programs such as
+          Adobe Illustrator, Sketch, and Figma and the generated SVG code that it
+          creates to buid the shapes.
+          <img src = "images/chart.png" alt = "chart">
+          </p>
+
+
+          <h2>My Web Usage:</h2>
+          <p>When browsing the internet I often find myself going to my computer
+          instead of my phone. Although this is the day and age of going mobile,
+          I prefer using my computer over my phone. The only time I use my phone for
+          the internet is when I don't have my laptop with me. I think phone browsers are
+          a lot harder to use than desktop browsers because they aren't fully optimized for
+          use yet. The only time desktop sites are really well built for mobile is when
+          they have a dedicated application for it such as Amazon or eBay.
+          instead of relying on mobile sites.</p>
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      <ul id = "side-buttons">
+        <li id = "validator"><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></li>
+        <li><a href = "post3.html" id = "previous">Previous Post</a></li>
+        <li><a href = "#" id = "next">Next Post</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
