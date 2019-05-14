@@ -6,7 +6,6 @@ nav ul li {
     display: none;
 }
 
-
 nav{
   position: fixed;
   margin: auto 0;
@@ -107,13 +106,13 @@ p{
   line-height: 30px;
 }
 
-time{
+
+#time{
+  text-align: center;
+  margin: auto;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  position: absolute;
   font-size: 15px;
-  right: 60px;
-  top:95px;
 }
 
 #container{
@@ -182,11 +181,8 @@ right page content is scrollable, but the page itself is not.*/
     display: none;
   }
 
-  time{
+  #time{
     font-size: 16px;
-    top:0px;
-    right:  0px;
-    left:  0px;
     text-align: center;
   }
 
@@ -236,7 +232,7 @@ right page content is scrollable, but the page itself is not.*/
 }
 
 #right-contents{
-  padding: 20px 60px 60px 60px;
+  padding: 60px 60px 60px 60px;
 }
 
 #right-outline::-webkit-scrollbar {
