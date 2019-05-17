@@ -54,7 +54,7 @@ h1 a:visited{
 }
 
 #green{
-  color: #3f696d;
+  color: #4F8E75;
 }
 
 
@@ -148,7 +148,7 @@ section{
 }
 
 .left-green{
-  background-color:#3f696d;
+  background-color:#4F8E75;
 }
 
 #futureTech{
@@ -166,7 +166,7 @@ section{
 /*Had to use this to cheat way through of having the scroll types
 switch whent he screen size was on mobile. On web I have it so the
 right page content is scrollable, but the page itself is not.*/
-@media (min-width: 799px){
+@media (min-width: 700px) {
   body{
     overflow-y: hidden;
   }
@@ -175,7 +175,7 @@ right page content is scrollable, but the page itself is not.*/
   }
 }
 
-@media (max-width: 799px){
+@media (max-width: 700px){
 
   body::-webkit-scrollbar {
     display: none;
