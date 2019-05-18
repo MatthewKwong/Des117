@@ -45,15 +45,15 @@ h1 a:visited{
   color:white;
 }
 
-#blue{
+.blue{
   color: #23b5d3;
 }
 
-#yellow{
+.yellow{
   color: #e2c044;
 }
 
-#green{
+.green{
   color: #4F8E75;
 }
 
@@ -151,15 +151,7 @@ section{
   background-color:#4F8E75;
 }
 
-#futureTech{
-  border: 10px solid #282b2d;
-}
-
-#unitrans{
-  border: 10px solid #282b2d;
-}
-
-#roboto{
+#futureTech, #unitrans, #roboto, #mobileDesktop, #coreModel{
   border: 10px solid #282b2d;
 }
 
