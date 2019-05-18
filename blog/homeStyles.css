@@ -4,13 +4,16 @@
 	display: flex;
   flex-wrap: wrap;
 	justify-content: center;
-  margin-bottom:75px;
+	padding-top:75px;
+	padding-bottom:75px;
+
 }
 
 .post{
+	position: relative;
+	/* border:2px solid black; */
 	box-shadow: -4px 18px 31px -4px rgba(0,0,0,1);
-  /* border:2px solid black; */
-  width: 325px;
+  width: 350px;
   padding:20px;
   margin:50px;
 }
@@ -41,9 +44,16 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.footer{
+#index-footer {
+	background-color: #282b2d;
 	text-align: center;
+	/* height: 50px; */
+	color: white;
+	width: 100%;
+	padding: 20px;
 }
+
+
 /*
 
 .float-left {
