@@ -5,13 +5,82 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="homeStyles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="homeStyles.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Matthew's Blog</title>
 
     <!--Reset Script-->
     <style>
-      body{
+
+      #sticky{
+        z-index: 1;
+        position: fixed;
+        background-color: #282b2d;
+        color: white;
+        /* background-color: white; */
+        /* color: #282b2d; */
+        height: 50px;
+        width: 100%;
+        /* padding-bottom: 10px; */
+      }
+
+      #sticky h1{
+        margin-left: -35px;
+
+        font-weight: 900;
+        padding:8px;
+        margin-top: 0;
+      }
+
+      /*Navbar*/
+      nav{
+        font-family: 'Roboto', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        position: relative;
+        /* background-color:red; */
+        background-color:white;
+        margin-top:75px;
+        z-index: 0;
+      }
+      nav ul{
+      	list-style-type: none;
+      	margin: 0;
+      	padding: 0;
+      }
+
+      nav > ul {
+      	display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+      }
+
+      nav > ul > li {
+      	flex: 1;
+      }
+
+      nav ul li {
+      	display:block;
+      	height:36px;
+      	line-height:36px;
+      	padding:0 10px;
+      	text-align:center;
+      	text-decoration:none;
+      }
+
+      nav a{
+        color:black;
+        text-decoration: none;
+      }
+
+      nav a:visited{
+        text-decoration: none;
+      }
+
+      html, body{
+        margin: 0;
+        padding: 0;
         overflow-y: scroll;
       }
 
@@ -19,150 +88,220 @@
         display: none;
       }
 
-      section{
-        width:100%;
+      .left-outline{
+        min-height:100%;
       }
 
-      p, h1, h3{
-        margin:0;
-        padding:0;
+      #container{
+        margin-top:2vh;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width:80%;
+        height: 80vh;
+        min-height:100%;
+        /* border:solid 2px black; */
+      }
+      #right-outline{
+        margin-top: 0;
+        height: 100%;
+        overflow-y: hidden;
+        background-color: #F6F6F6;
+      }
+      .left-outline img{
+        max-width: 100%;
       }
 
+      .intro{
+      	/* position: absolute; */
+      	height: 100vh;
+      }
+
+      .postContainer{
+        /* height:100vh; */
+      	display: flex;
+        flex-wrap: wrap;
+      	justify-content: center;
+      	padding-top:75px;
+      }
+
+      .post{
+      	position: relative;
+      	/* border:2px solid black; */
+      	box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
+        width: 325px;
+        padding:20px;
+        margin:50px;
+      }
+
+      .post img{
+        /* margin-left: -10px ; */
+        width: 300px;
+        display: block;
+        /* width: 50%; */
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        /* border:solid 2px black; */
+      }
+
+      .post h2{
+        /* color:#e2c044; */
+        margin-bottom:10px;
+      }
+
+      .post .time{
+      	font-size: 15px;
+      	/* font-weight:700; */
+      }
+
+      .post a{
+        font-family: 'Roboto', sans-serif;
+      }
+
+      #index-footer {
+      	/* padding: 20px; */
+      	background-color: #282b2d;
+      	text-align: center;
+      	height: 50px;
+      	color: white;
+      	width: 100%;
+      }
+
+      #index-footer p{
+      	padding-top: 12px;
+      }
+
+      #section{
+      	width:100%;
+      }
     </style>
   </head>
+
   <body>
+    <div id = "sticky">
+      <h1>MATTHEW KWONG</h1>
+    </div>
+
     <header>
-      <h1 id = "logo"><a href = "index.html">MATTHEW KWONG</span></a></h1>
+      <nav>
+        <ul>
+          <li><a href = "post1.html">Post 1</a></li>
+          <li><a href = "post2.html">Post 2</a></li>
+          <li><a href = "post3.html">Post 3</a></li>
+          <li><a href = "post4.html">Post 4</a></li>
+          <li><a href = "post5.html">Post 5</a></li>
+          <li><a href = "post6.html">Post 6</a></li>
+        </ul>
+      </nav>
+    </header>
+      <div id = "container">
+        <section class = "left-outline">
+          <img id = "#" src = "images/blogBanner.jpg" alt = "#" width = "600" height = "600">
+        </section>
 
-    <nav>
-      <ul>
-        <li><a href = "post1.html">Post 1</a></li>
-        <li><a href = "post2.html">Post 2</a></li>
-        <li><a href = "post3.html">Post 3</a></li>
-        <li><a href = "post4.html">Post 4</a></li>
-        <li><a href = "post5.html">Post 5</a></li>
-      </ul>
-    </nav>
-  </header>
+        <section id = "right-outline">
+          <article id = "right-contents">
+            <h1>BLOG</h1>
 
-
-<!--
-    <svg
-    	xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1659.78 933.17">
-    	<defs>
-    		<style>
-        .cls-2,.cls-5{fill:#e2c045;}
-        .cls-10,.cls-3{fill:#fff;}
-        .cls-3{stroke:#0a0909;stroke-miterlimit:10;stroke-width:5.74px;}
-        .cls-4,.cls-8{fill:#23b5d3;}
-        .cls-10,.cls-5,.cls-8{font-size:87.49px;font-family:Arial-Black,
-          Arial Black;font-weight:800;}
-        .cls-6{letter-spacing:-0.02em;}.cls-7{letter-spacing:0em;}
-        .cls-9{letter-spacing:-0.02em;}.cls-11{letter-spacing:-0.07em;}
-      </style>
-    	</defs>
-    	<rect class="cls-2" x="116.04" y="442.64" width="637.91" height="343.86"/>
-    	<rect class="cls-3" x="256.19" y="138.87" width="774.19" height="526.73"/>
-    	<rect class="cls-4" x="601.46" y="58.67" width="871.81" height="527.34"/>
-    	<text class="cls-5" transform="translate(287.49 260.82)">B
-    		<tspan class="cls-6" x="68.05" y="0">L</tspan>
-    		<tspan class="cls-7" x="124.91" y="0">OG</tspan>
-    	</text>
-    	<text class="cls-8" transform="translate(1040.83 721.33)">K
-    		<tspan class="cls-9" x="72.88" y="0">W</tspan>
-    		<tspan x="158.87" y="0">ONG</tspan>
-    	</text>
-    	<text class="cls-10" transform="translate(643.5 472.24)">M
-    		<tspan class="cls-11" x="82.57" y="0">A</tspan>
-    		<tspan x="144.6" y="0">TTHEW</tspan>
-    	</text>
-    </svg> -->
+            <h2>Welcome to my blog! Here you can learn more about articles I've
+              read for Design 117.
+            </h2>
+          </article>
+        </section>
+      </div>
 
 
+    <section id = "section">
+      <!-- <p style = "text-align:center; padding-top: 20px">Latest Posts</p> -->
+
+      <div class = "postContainer">
+
+        <article class = "post green-contents">
+          <img src = "images/#.jpg" alt = "#" width = "350" height = "350">
+          <h2 class = "blog-title">VI. </h2>
+          <!-- <p class = "time"><time datetime="2019-05-01">May 2, 2019</time></p> -->
+          <p>
+          </p>
+            <!--Read More link-->
+          <br>
+          <a class = "readMore" href = "#.html">(Read More)</a>
+        </article>
+
+        <article class = "post yellow-contents">
+          <img src = "images/coreModel.jpg" alt = "core model graphic" width = "350" height = "350">
+
+          <h2 class = "blog-title">V. The Core Model</h2>
+          <p class = "time"><time datetime="2019-05-16">May 16, 2019</time></p>
+
+          <p>In Ida Aalen's article,
+          <i><a href = "https://alistapart.com/article/the-core-model-designing-inside-out-for-better-results/">
+          The Core Model: Designing Inside Out for Better Results</a></i>
+          she writes about using a "core model" system to design webpages.
+          The model consists of two key factors, a business objective
+          and fulfilling user tasks.</p>
+          <!--Read More link-->
+          <br>
+          <a class = "readMore" href = "post5.html">(Read More)</a>
+
+        </article>
 
 
+        <article class = "post blue-contents">
+          <img src = "images/mobileDesktop.jpg" alt = "mobile and desktop articles" width = "350" height = "350">
+          <h2 class = "blog-title">IV. Mobile and Desktop Design</h2>
+          <p class = "time"><time datetime="2019-05-07">May 7, 2019</time></p>
+          <p>In the article
+          <i><a href = "https://99designs.com/blog/web-digital/desktop-vs-mobile-app-design/">
+          Desktop vs. mobile app design: how to optimize your user experience</a></i>
+          by Matt Ellis, he writes about going mobile-first is a better way of
+           designing a web page because it is easier to add content.</p>
+           <!--Read More link-->
+           <br>
+           <a class = "readMore" href = "post4.html">(Read More)</a>
+        </article>
 
+        <article class = "post green-contents">
+          <img src = "images/roboto.jpg" alt = "Roboto Typography" width = "350" height = "350">
+          <h2 class = "blog-title">III. Typography</h2>
+          <p class = "time"><time datetime="2019-05-01">May 2, 2019</time></p>
+          <p>Roboto was designed by Christian Robertson in 2011. This font is
+            most famously known for being the system font for Android 4.0
+            "Ice Cream Sandwhich". It was later redesigned in 2015 for Android
+             5.0 "Lollipop".</p>
+            <!--Read More link-->
+          <br>
+          <a class = "readMore" href = "post3.html">(Read More)</a>
+        </article>
 
+        <article class = "post yellow-contents">
+          <img src = "images/article.jpg" alt = "future of tech graphic" width = "350" height = "350">
+          <h2 class = "blog-title">II. Redesigning An Article</h2>
+          <p class = "time"><time datetime="2019-05-01">May 1, 2019</time></p>
+          <p>I chose to nest section for each individual subtopic under an
+            article tag so that it's easier to go through the code later on
+            and recognize where each subtopic begins. My format goes as
+            followed: article, div, header, nav, section, footer.</p>
+          <!--Read More link-->
+          <br>
+          <a class = "readMore" href = "post2.html">(Read More)</a>
+        </article>
 
-
-
-
-      <section>
-        <div class = "postContainer">
-          <article class = "post yellow-contents">
-            <img src = "images/coreModel.jpg" alt = "core model graphic" width = "350" height = "350">
-
-            <h2 class = "blog-title">V. The Core Model</h2>
-            <p class = "time"><time datetime="2019-05-16">May 16, 2019</time></p>
-
-            <p>In Ida Aalen's article,
-            <i><a href = "https://alistapart.com/article/the-core-model-designing-inside-out-for-better-results/">
-            The Core Model: Designing Inside Out for Better Results</a></i>
-            she writes about using a "core model" system to design webpages.
-            The model consists of two key factors, a business objective
-            and fulfilling user tasks.</p>
+        <article class = "post blue-contents">
+          <img src = "images/futureTech.jpg" alt = "future of tech graphic" width = "400" height = "400">
+          <h2 class = "blog-title">I. Future of Technology</h2>
+          <p class = "time"><time datetime="2019-04-02">April 2, 2019</time></p>
+          <p>In the future, I believe that the way we consume our digital
+            media in the world will drastically change.
+            In the way we look and consume digital media, cable networks will
+            disappear with time and streaming services like Netflix and Hulu
+            will take over.</p>
             <!--Read More link-->
             <br>
-            <a class = "readMore" href = "post5.html">(Read More)</a>
-
-          </article>
-
-
-          <article class = "post blue-contents">
-            <img src = "images/mobileDesktop.jpg" alt = "mobile and desktop articles" width = "350" height = "350">
-            <h2 class = "blog-title">IV. Mobile and Desktop Design</h2>
-            <p class = "time"><time datetime="2019-05-07">May 7, 2019</time></p>
-            <p>In the article
-            <i><a href = "https://99designs.com/blog/web-digital/desktop-vs-mobile-app-design/">
-            Desktop vs. mobile app design: how to optimize your user experience</a></i>
-            by Matt Ellis, he writes about going mobile-first is a better way of
-             designing a web page because it is easier to add content.</p>
-             <!--Read More link-->
-             <br>
-             <a class = "readMore" href = "post4.html">(Read More)</a>
-          </article>
-
-          <article class = "post green-contents">
-            <img src = "images/roboto.jpg" alt = "Roboto Typography" width = "350" height = "350">
-            <h2 class = "blog-title">III. Typography</h2>
-            <p class = "time"><time datetime="2019-05-01">May 2, 2019</time></p>
-            <p>Roboto was designed by Christian Robertson in 2011. This font is
-              most famously known for being the system font for Android 4.0
-              "Ice Cream Sandwhich". It was later redesigned in 2015 for Android
-               5.0 "Lollipop".</p>
-              <!--Read More link-->
-            <br>
-            <a class = "readMore" href = "post3.html">(Read More)</a>
-          </article>
-
-          <article class = "post yellow-contents">
-            <img src = "images/article.jpg" alt = "future of tech graphic" width = "350" height = "350">
-            <h2 class = "blog-title">II. Redesigning An Article</h2>
-            <p class = "time"><time datetime="2019-05-01">May 1, 2019</time></p>
-            <p>I chose to nest section for each individual subtopic under an
-              article tag so that it's easier to go through the code later on
-              and recognize where each subtopic begins. My format goes as
-              followed: article, div, header, nav, section, footer.</p>
-            <!--Read More link-->
-            <br>
-            <a class = "readMore" href = "post2.html">(Read More)</a>
-          </article>
-
-          <article class = "post blue-contents">
-            <img src = "images/futureTech.jpg" alt = "future of tech graphic" width = "400" height = "400">
-            <h2 class = "blog-title">I. Future of Technology</h2>
-            <p class = "time"><time datetime="2019-04-02">April 2, 2019</time></p>
-            <p>In the future, I believe that the way we consume our digital
-              media in the world will drastically change.
-              In the way we look and consume digital media, cable networks will
-              disappear with time and streaming services like Netflix and Hulu
-              will take over.</p>
-              <!--Read More link-->
-              <br>
-              <a class = "readMore" href = "post1.html">(Read More)</a>
-          </article>
-        </div>
-      </section>
+            <a class = "readMore" href = "post1.html">(Read More)</a>
+        </article>
+      </div>
+    </section>
           <!-- <div class="top">
       <svg viewBox="0 0 100 100">
         <polygon style="" points="0 0, 0 15, 100 0" fill="#23b5d3"/>
