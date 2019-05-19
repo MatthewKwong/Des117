@@ -8,28 +8,32 @@ nav ul li {
 
 nav{
   position: fixed;
-  margin-top: 0;
+  top:0;
   background-color: #282b2d;
   height: 50px;
   width: 100%;
   z-index: 1;
+  /* background-color: white; */
+  /* display: none; */
 }
+
 
 #logo{
   z-index: 2;
   position: fixed;
-  left: -30px;
+  left: -35px;
   /* left:0; */
   right: 0;
+
   /* border: solid 2px white; */
   text-align: center;
   padding:4px;
   margin-top: 4px;
+  /* color:black; */
   color:white;
 }
 
 .left-outline a{
-
   text-align: center;
 }
 
@@ -116,6 +120,10 @@ p{
 }
 
 #container{
+/*Size of the nav bar height*/
+
+
+  /*Originally just this*/
   display: flex;
 }
 
@@ -124,7 +132,6 @@ section{
 }
 
 .left-outline{
-  background-color: #23b5d3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,7 +273,6 @@ right page content is scrollable, but the page itself is not.*/
 li{
   list-style-type: none;
 }
-
 
 footer a{
   color:white;
