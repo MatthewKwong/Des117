@@ -12,6 +12,7 @@
     <!--Reset Script-->
     <style>
 
+
       #sticky{
         z-index: 1;
         position: fixed;
@@ -26,7 +27,6 @@
 
       #sticky h1{
         margin-left: -35px;
-
         font-weight: 900;
         padding:8px;
         margin-top: 0;
@@ -100,13 +100,13 @@
         width:80%;
         height: 80vh;
         min-height:100%;
+        background-color: #F6F6F6;
         /* border:solid 2px black; */
       }
       #right-outline{
         margin-top: 0;
         height: 100%;
         overflow-y: hidden;
-        background-color: #F6F6F6;
       }
       .left-outline img{
         max-width: 100%;
@@ -128,10 +128,62 @@
       .post{
       	position: relative;
       	/* border:2px solid black; */
-      	box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
         width: 325px;
         padding:20px;
         margin:50px;
+        transition: transform .2s;
+      }
+
+      /*On big screens make the posts longer*/
+      @media screen and (min-width: 1600px){
+        .post{
+          width: 400px;
+        }
+      }
+
+      @media screen and (max-width: 800px){
+        nav{
+          width: 90%;
+        }
+
+        #container{
+          width:100% !important;
+          /*Space bewtween the nav bar and container*/
+          top:-10px;
+          /*Space between the first post and container*/
+          height: 110vh;
+        }
+
+        .left-outline{
+          z-index: 2222;
+          margin-top:40vh;
+          width:100%;
+          height:500px;
+          padding: 0 !important;
+        }
+
+        .left-outline h1{
+          /*space between the top of the designed & developed and the H1 BLOG*/
+          margin-top: 30% !important;
+          text-align: center !important;
+          font-size: 40px !important;
+        }
+
+        .left-outline p{
+          margin-top:-5% !important;
+          font-size: 20px !important;
+          padding:40px;
+        }
+
+        #right-outline{
+          height:55vh;
+          top:0;
+          /* background-color: red !important; */
+          width:100%;
+        }
+        #right-outline p{
+          font-size: 20px;
+        }
       }
 
       .post img{
@@ -159,6 +211,10 @@
         font-family: 'Roboto', sans-serif;
       }
 
+      .post:hover {
+        box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
+        transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
       #index-footer {
       	/* padding: 20px; */
       	background-color: #282b2d;
@@ -174,6 +230,67 @@
 
       #section{
       	width:100%;
+      }
+      #self{
+        border: solid 10px #282b2d;
+        border-radius: 50%;
+      }
+
+      .left-outline{
+        display: inline-block;
+        padding-left:80px;
+      }
+
+      .left-outline h1{
+        margin-top: 20%;
+        text-align: left;
+        /* font-family:; */
+        font-size: 90px;
+        font-weight: 900;
+      }
+
+      .left-outline p{
+        /* margin-left:80px; */
+        padding:  0 80px 0 80px 0 ;
+        font-size: 20px;
+      }
+
+      .left-outline a{
+        font-weight: 700;
+        color:black;
+        /* text-decoration: none; */
+      }
+
+      .left-outline a{
+        /* text-decoration: none; */
+        color:black;
+      }
+
+      .left-outline a:hover{
+        color: #585858;
+      }
+      #right-outline{
+        margin-top: 0;
+      }
+
+      #right-outline img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        width:70%;
+        height:auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #right-contents p{
+        margin-top:30px;
+        text-align: center;
+      }
+      #right-contents span{
+        font-weight: 600;
       }
     </style>
   </head>
@@ -197,16 +314,21 @@
     </header>
       <div id = "container">
         <section class = "left-outline">
-          <img id = "#" src = "images/blogBanner.jpg" alt = "#" width = "600" height = "600">
+          <h1>BLOG</h1>
+          <!-- <img id = "#" src = "images/blogBanner.jpg" alt = "#" width = "600" height = "600"> -->
+          <p>Welcome to my blog! Here you can learn more about the work I've been
+           doing in Design 117. Each post is about a specific article text we've
+         read in class. <a href = "images/blog.jpg">Here</a> you can see the design
+         process behind my blog and the initial layout I had made. </p>
         </section>
 
         <section id = "right-outline">
           <article id = "right-contents">
-            <h1>BLOG</h1>
-
-            <h2>Welcome to my blog! Here you can learn more about articles I've
-              read for Design 117.
-            </h2>
+            <!-- <h1>BLOG</h1> -->
+            <img id = "self" src = "images/self.jpg">
+            <p>Designed & Developed by:
+              <br>
+              <span>Matthew Kwong</span></p>
           </article>
         </section>
       </div>
@@ -218,20 +340,16 @@
       <div class = "postContainer">
 
         <article class = "post green-contents">
-          <img src = "images/coreModel.jpg" alt = "core model graphic" width = "350" height = "350">
-
-          <h2 class = "blog-title">VI.</h2>
-          <p class = "time"><time datetime="2019-05-16"></time></p>
-
-          <p>In Ida Aalen's article,
-          <i><a href = "https://alistapart.com/article/the-core-model-designing-inside-out-for-better-results/">
-          The Core Model: Designing Inside Out for Better Results</a></i>
-          she writes about using a "core model" system to design webpages.
-          The model consists of two key factors, a business objective
-          and fulfilling user tasks.</p>
-          <!--Read More link-->
+          <img src = "images/roboto.jpg" alt = "Roboto Typography" width = "350" height = "350">
+          <h2 class = "blog-title">III. Typography</h2>
+          <p class = "time"><time datetime="2019-05-01">May 2, 2019</time></p>
+          <p>Roboto was designed by Christian Robertson in 2011. This font is
+            most famously known for being the system font for Android 4.0
+            "Ice Cream Sandwhich". It was later redesigned in 2015 for Android
+             5.0 "Lollipop".</p>
+            <!--Read More link-->
           <br>
-          <a class = "readMore" href = "post6.html">(Read More)</a>
+          <a class = "readMore" href = "post3.html">(Read More)</a>
         </article>
 
 
