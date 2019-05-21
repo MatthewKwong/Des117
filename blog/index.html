@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:400,700,900" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="homeStyles.css"> -->
@@ -39,7 +39,6 @@
         margin-right: auto;
         width: 40%;
         position: relative;
-        /* background-color:red; */
         background-color:white;
         margin-top:75px;
         z-index: 0;
@@ -97,8 +96,13 @@
         min-height:100%;
       }
 
+      #latest-posts{
+        margin-top:50px;
+        text-align: center;
+      }
+
       #container{
-        margin-top:2vh;
+        /* margin-top:2vh; */
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -108,6 +112,7 @@
         background-color: #F6F6F6;
         /* border:solid 2px black; */
       }
+
       #right-outline{
         margin-top: 0;
         height: 100%;
@@ -123,16 +128,14 @@
       }
 
       .postContainer{
-        /* height:100vh; */
       	display: flex;
         flex-wrap: wrap;
       	justify-content: center;
-      	padding-top:75px;
+      	/* padding-top:75px; */
       }
 
       .post{
       	position: relative;
-      	/* border:2px solid black; */
         width: 325px;
         padding:20px;
         margin:50px;
@@ -148,22 +151,20 @@
 
       @media screen and (max-width: 800px){
         nav{
-          font-size: 12px;
+          font-size: 14px;
           width: 95%;
           margin-bottom:-20px;
         }
 
-
         #container{
           width:100% !important;
+          height: 115vh;
           /*Space bewtween the nav bar and container*/
           top:10px;
-          /*Space between the first post and container*/
-          height: 110vh;
         }
 
         .left-outline{
-          margin-top:40vh;
+          margin-top:50vh;
           width:100%;
           height:500px;
           padding: 0 !important;
@@ -191,6 +192,10 @@
         #right-outline p{
           font-size: 20px;
         }
+      }
+
+      .post:first-of-type{
+        /* margin-top: 10px; */
       }
 
       .post img{
@@ -222,6 +227,7 @@
         box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
         transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
+
       #index-footer {
       	/* padding: 20px; */
       	background-color: #282b2d;
@@ -246,6 +252,10 @@
       .left-outline{
         display: inline-block;
         padding-left:80px;
+      }
+
+      .left-outline p:last-of-type{
+        margin-top: -60px !important;
       }
 
       .left-outline h1{
@@ -321,12 +331,14 @@
     </header>
       <div id = "container">
         <section class = "left-outline">
-          <h1>BLOG</h1>
+          <h1>Welcome</h1>
           <!-- <img id = "#" src = "images/blogBanner.jpg" alt = "#" width = "600" height = "600"> -->
-          <p>Welcome to my blog! Here you can learn more about the work I've been
-           doing in Design 117. Each post is about a specific article text we've
-         read in class. <a href = "images/blog.jpg">Here</a> you can see the design
-         process behind my blog and the initial layout I had made. </p>
+          <p>Here you can learn more about the work I've been
+           doing in Design 117. Each post is about a specific article we've
+           read in class.</p>
+          <p>If you'd like to learn more about the initial design layout
+           I've made
+         <a href = "images/blog.jpg">Here</a> </p>
         </section>
 
         <section id = "right-outline">
@@ -340,13 +352,13 @@
         </section>
       </div>
 
-
     <section id = "section">
       <!-- <p style = "text-align:center; padding-top: 20px">Latest Posts</p> -->
+      <h1 id = "latest-posts">Latest Posts</h1>
 
       <div class = "postContainer">
 
-        <article class = "post green-contents">
+        <!-- <article class = "post green-contents">
           <img src = "images/roboto.jpg" alt = "Roboto Typography" width = "350" height = "350">
           <h2 class = "blog-title">III. Typography</h2>
           <p class = "time"><time datetime="2019-05-01">May 2, 2019</time></p>
@@ -354,10 +366,9 @@
             most famously known for being the system font for Android 4.0
             "Ice Cream Sandwhich". It was later redesigned in 2015 for Android
              5.0 "Lollipop".</p>
-            <!--Read More link-->
           <br>
           <a class = "readMore" href = "post3.html">(Read More)</a>
-        </article>
+        </article> -->
 
 
         <article class = "post yellow-contents">
