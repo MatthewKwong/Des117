@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:400,700,900" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="homeStyles.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Matthew's Blog</title>
 
-    <!--Reset Script-->
     <style>
-
-
       #sticky{
         z-index: 1;
         position: fixed;
@@ -51,7 +47,6 @@
 
       nav > ul {
       	display: flex;
-        /* flex-wrap: wrap; */
         justify-content: center;
       }
 
@@ -102,7 +97,6 @@
       }
 
       #container{
-        /* margin-top:2vh; */
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -183,6 +177,10 @@
           padding:40px;
         }
 
+        .left-outline p:last-of-type{
+          margin-top: -60px !important;
+        }
+
         #right-outline{
           height:55vh;
           top:0;
@@ -194,12 +192,7 @@
         }
       }
 
-      .post:first-of-type{
-        /* margin-top: 10px; */
-      }
-
       .post img{
-        /* margin-left: -10px ; */
         width: 300px;
         display: block;
         /* width: 50%; */
@@ -210,7 +203,6 @@
       }
 
       .post h2{
-        /* color:#e2c044; */
         margin-bottom:10px;
       }
 
@@ -229,7 +221,6 @@
       }
 
       #index-footer {
-      	/* padding: 20px; */
       	background-color: #282b2d;
       	text-align: center;
       	height: 50px;
@@ -254,38 +245,34 @@
         padding-left:80px;
       }
 
-      .left-outline p:last-of-type{
-        margin-top: -60px !important;
-      }
+
 
       .left-outline h1{
         margin-top: 20%;
         text-align: left;
-        /* font-family:; */
         font-size: 90px;
         font-weight: 900;
       }
 
       .left-outline p{
         /* margin-left:80px; */
-        padding:  0 80px 0 80px 0 ;
+        padding:  0 80px 0 80px 0;
         font-size: 20px;
       }
 
       .left-outline a{
         font-weight: 700;
         color:black;
-        /* text-decoration: none; */
       }
 
       .left-outline a{
-        /* text-decoration: none; */
         color:black;
       }
 
       .left-outline a:hover{
         color: #585858;
       }
+
       #right-outline{
         margin-top: 0;
       }
@@ -325,10 +312,10 @@
           <li><a href = "post3.html">Post 3</a></li>
           <li><a href = "post4.html">Post 4</a></li>
           <li><a href = "post5.html">Post 5</a></li>
-          <li><a href = "post6.html">Post 6</a></li>
         </ul>
       </nav>
     </header>
+
       <div id = "container">
         <section class = "left-outline">
           <h1>Welcome</h1>
@@ -344,7 +331,7 @@
         <section id = "right-outline">
           <article id = "right-contents">
             <!-- <h1>BLOG</h1> -->
-            <img id = "self" src = "images/self.jpg">
+            <img id = "self" src = "images/self.jpg" alt = "self portrait svg">
             <p>Designed & Developed by:
               <br>
               <span>Matthew Kwong</span></p>
@@ -353,30 +340,14 @@
       </div>
 
     <section id = "section">
-      <!-- <p style = "text-align:center; padding-top: 20px">Latest Posts</p> -->
       <h1 id = "latest-posts">Latest Posts</h1>
 
       <div class = "postContainer">
 
-        <!-- <article class = "post green-contents">
-          <img src = "images/roboto.jpg" alt = "Roboto Typography" width = "350" height = "350">
-          <h2 class = "blog-title">III. Typography</h2>
-          <p class = "time"><time datetime="2019-05-01">May 2, 2019</time></p>
-          <p>Roboto was designed by Christian Robertson in 2011. This font is
-            most famously known for being the system font for Android 4.0
-            "Ice Cream Sandwhich". It was later redesigned in 2015 for Android
-             5.0 "Lollipop".</p>
-          <br>
-          <a class = "readMore" href = "post3.html">(Read More)</a>
-        </article> -->
-
-
         <article class = "post yellow-contents">
           <img src = "images/coreModel.jpg" alt = "core model graphic" width = "350" height = "350">
-
           <h2 class = "blog-title">V. The Core Model</h2>
           <p class = "time"><time datetime="2019-05-16">May 16, 2019</time></p>
-
           <p>In Ida Aalen's article,
           <i><a href = "https://alistapart.com/article/the-core-model-designing-inside-out-for-better-results/">
           The Core Model: Designing Inside Out for Better Results</a></i>
@@ -444,25 +415,6 @@
         </article>
       </div>
     </section>
-          <!-- <div class="top">
-      <svg viewBox="0 0 100 100">
-        <polygon style="" points="0 0, 0 15, 100 0" fill="#23b5d3"/>
-      </svg>
-    </div>
-
-    <div class="bottom">
-      <svg viewBox="0 0 100 100">
-        <polygon style="" points="900 0, 100,0 100,100 0,100" fill="#2d9cd4"/>
-      </svg>
-    </div>
-
-
-    <div class="bottom">
-      <svg viewBox="0 0 100 100">
-        <polygon style="" points="0 0, 0, 90 30,100 0,100" fill="#23b5d3"/>
-      </svg>
-    </div>
-    </div> -->
 
     <footer id = "index-footer">
       <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
