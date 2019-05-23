@@ -1,3 +1,17 @@
+.name-wrapper{
+  height: 0;
+  /* padding-left: */
+  position: relative;
+}
+
+.name{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+}
+
 .cls-1 {
   fill: #95bdc1;
 }
@@ -15,7 +29,7 @@
 
 .cls-17,
 .cls-19 {
-  font-size: 109.39px;
+  font-size: 4em;
   stroke-width: 0.9px;
   font-family: HiraKakuStd-W8-83pv-RKSJ-H, Hiragino Kaku Gothic Std;
 }
@@ -36,10 +50,11 @@ svg{
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
+  top:-100px;
+  left: 160px;
   right: 0;
-  height:300px;
-  width:1020px;
+  /* height:300px;
+  width:1020px; */
 }
 
 .cls-16,.cls-17,.cls-18,.cls-19{

@@ -20,19 +20,25 @@ a{
 }
 
 
-
-
 #inner-container{
-  width: 700px;
+  justify-content: center;
   margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
-#container{
+#inner-container > section{
+  width: 300px;
+  margin: 20px;
+  border: solid 2px black;
+}
+
+footer{
+  position: fixed;
   /* background-color:white; */
   /* border: solid 1px black; */
-  margin: 0px 200px 0px 200px ;
-}
-
-#container footer{
+  /* margin: 0px 100px; */
+  bottom:0;
+  width: 100%;
   text-align: center;
 }
