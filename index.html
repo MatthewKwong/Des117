@@ -4,78 +4,131 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="name.css">
+    <!-- <link rel="stylesheet" type="text/css" href="name.css"> -->
     <title>Matthew Kwong's Home page</title>
   </head>
   <body>
+    <div class = "wrapper">
+      <div class = "megaouter">
+        <div class = "outer">
+          <div class = "name">
+          <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 166.14">
+             <defs>
+                <style>
+                  .cls-1, .cls-4{
 
-<!--https://css-tricks.com/svg-text-typographic-designs/-->
-<!--
+                    font-size:70px;
+                    fill:none;
+                    stroke-miterlimit:10;
+                    font-family:Arial-Black, Arial Black;
+                    font-weight:800;
+                    }
+                  .cls-1{
+                    stroke:#333;
+                    }
+                  .cls-2{
+                    letter-spacing:-0.02em;
+                    }
+                  .cls-3{
+                    letter-spacing:-0.07em;
+                  }
+                  .cls-4{
+                    stroke:#fff;
+                  }
+                .cls-1,.cls-2,.cls-3,.cls-4{
+                  stroke-dasharray: 2000;
+                  stroke-dashoffset:0;
+                  animation: draw 5s linear forwards;
+                }
+                @keyframes draw {
+                  from {
+                    stroke-dashoffset: 2000;
+                  }
 
-      <header id = "header">
-        <div class = "name-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 308.75" class = "s">
-            <g id="Layer_2" data-name="Layer 2">
-              <text class="cls-17" transform="translate(61.1 248.35)">KWONG</text>
-              <text class="cls-17" transform="translate(61.1 139.86)">M<tspan class="cls-18" x="112.46" y="0">A</tspan>
-                <tspan x="198.88" y="0">TTHEW</tspan>
-              </text>
-            </g>
-                <g id="Layer_4" data-name="Layer 4"><text class="cls-19" transform="translate(72.63 138)">M<tspan class="cls-18" x="112.46" y="0">A</tspan>
-                <tspan x="198.88" y="0">TTHEW</tspan></text>
-              <text class="cls-19" transform="translate(72.63 244.49)">KWONG</text></g>
+                  to {
+                    stroke-dashoffset: 0;
+                  }
+                }
+
+                </style>
+             </defs>
+
+             <title>dashed name</title>
+             <text class="cls-1" transform="translate(0.5 144.18)">
+                K
+                <tspan class="cls-2" x="58.31" y="0">W</tspan>
+                <tspan x="127.11" y="0">ONG</tspan>
+             </text>
+             <text class="cls-1" transform="translate(0.5 62.62)">
+                M
+                <tspan class="cls-3" x="66.07" y="0">A</tspan>
+                <tspan x="115.7" y="0">TTHEW</tspan>
+             </text>
+             <text class="cls-4" transform="translate(13.25 60.56)">
+                M
+                <tspan class="cls-3" x="66.07" y="0">A</tspan>
+                <tspan x="115.7" y="0">TTHEW</tspan>
+             </text>
+             <text class="cls-4" transform="translate(13.25 139.91)">
+                K
+                <tspan class="cls-2" x="58.31" y="0">W</tspan>
+                <tspan x="127.11" y="0">ONG</tspan>
+             </text>
           </svg>
-        </div> -->
-
-        <!-- <img src = "images/banner.jpg" alt = "image banner" width = "1020" height = "300"> -->
-        <h1>Matthew Kwong's Portal</h1>
-      </header>
-
-      <div id = "inner-container">
-
-        <section id = "majorProjects">
-          <h2>Major Projects</h2>
-          <ol>
-            <li><a href = "blog">Blog</a></li>
-            <li><a href = "#">My Portfolio</a></li>
-          </ol>
-        </section>
-
-        <section id = "exercise">
-          <h2>Exercises</h2>
-          <ol>
-            <li><a href = "personalsite">Personal Site</a></li>
-            <li><a href = "lemmings">Lemmings</a></li>
-            <li><a href = "article">Article Markup</a></li>
-            <li><a href = "fonttest">Font Test</a></li>
-            <li><a href = "css-backgrounds">CSS Backgrounds</a></li>
-            <li><a href = "floatExamples">Float Challenges</a></li>
-            <li><a href = "positioning">Positioning Challenges</a></li>
-            <li><a href = "reviewSiteStart">Responsive Layout</a></li>
-            <li><a href = "dropdownmenus-start">Drop Down Menus</a></li>
-            <li><a href = "CSSGrid-Start">CSS Grid</a></li>
-            <li><a href = "SimpleAnimation-START">CSS Animation</a></li>
-          </ol>
-        </section>
-
-        <section id = "tools">
-          <h3>Links and Tools</h3>
-          <ul>
-            <li><a href = "http://www.wbwip.com/wbw/emailencoder.html">Email Enconder</a></li>
-            <li><a href = "https://fonts.google.com/">Google Fonts</a></li>
-            <li><a href = "https://coolors.co">Color Scheme Generator</a></li>
-            <li><a href = "https://cssgradient.io/">CSS Gradient</a></li>
-            <li><a href = "https://www.cssmatic.com/box-shadow">Box Shadow</a></li>
-            <li><a href = "https://matthewlein.com/tools/ceaser">CSS Easing Animation Tool</a></li>
-          </ul>
-        </section>
+          <img id = "self" src = "self.png" alt = "self image">
       </div>
+    </div>
+  </div>
 
-      <footer>
-        <p>Matthew Kwong</p>
-        <p>Contact: <a href = "mailto:&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
-          <p><a href = "https://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>
-      </footer>
+    <!--https://css-tricks.com/svg-text-typographic-designs/-->
+        <!-- <h1>Matthew Kwong's Portal</h1> -->
 
+        <div id = "inner-container">
+
+          <section id = "majorProjects">
+            <h2>Major Projects</h2>
+            <ul>
+              <li><a href = "blog">Blog</a></li>
+              <li><a href = "#">My Portfolio</a></li>
+            </ul>
+          </section>
+
+          <section id = "exercise">
+            <h2>Exercises</h2>
+            <ul>
+              <li><a href = "personalsite">Personal Site</a></li>
+              <li><a href = "lemmings">Lemmings</a></li>
+              <li><a href = "article">Article Markup</a></li>
+              <li><a href = "fonttest">Font Test</a></li>
+              <li><a href = "css-backgrounds">CSS Backgrounds</a></li>
+              <li><a href = "floatExamples">Float Challenges</a></li>
+              <li><a href = "positioning">Positioning Challenges</a></li>
+              <li><a href = "reviewSiteStart">Responsive Layout</a></li>
+              <li><a href = "dropdownmenus-start">Drop Down Menus</a></li>
+              <li><a href = "CSSGrid-Start">CSS Grid</a></li>
+              <li><a href = "SimpleAnimation-START">CSS Animation</a></li>
+            </ul>
+          </section>
+
+          <section id = "tools">
+            <h2>Links and Tools</h2>
+            <ul>
+              <li><a href = "http://www.wbwip.com/wbw/emailencoder.html">Email Enconder</a></li>
+              <li><a href = "https://fonts.google.com/">Google Fonts</a></li>
+              <li><a href = "https://coolors.co">Color Scheme Generator</a></li>
+              <li><a href = "https://cssgradient.io/">CSS Gradient</a></li>
+              <li><a href = "https://www.cssmatic.com/box-shadow">Box Shadow</a></li>
+              <li><a href = "https://matthewlein.com/tools/ceaser">CSS Easing Animation Tool</a></li>
+            </ul>
+          </section>
+        </div>
+    </div>
+
+
+    <footer>
+      <p>Matthew Kwong</p>
+      <p>Contact: <a href = "mailto:&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
+        <p><a href = "https://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>
+    </footer>
   </body>
 </html>
