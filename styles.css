@@ -54,7 +54,7 @@ a:visited{
 
 #inner-container > section{
   width: 300px;
-  margin-top:30px;
+  margin-top:20px;
   margin-left: 20px;
   margin-right: 20px;
   /* border: solid 2px black; */
@@ -97,7 +97,7 @@ footer a{
 
   .name, .name-shadow{
     position: absolute;
-    font-family: arial black;
+    font-family: arial;
     margin-left:-50px;
     margin-top:0px;
     display: block;
@@ -109,14 +109,14 @@ footer a{
 
   .name-shadow{
     margin-top:-3px;
-    margin-left:-40px;
+    margin-left:-45px;
     color:white;
     -webkit-text-stroke-color: white;
   }
 
   .lastname, .lastname-shadow{
     position: absolute;
-    font-family: arial black;
+    font-family: arial;
     margin-left:-50px;
     display: block;
     text-align: left;
@@ -127,7 +127,7 @@ footer a{
   }
 
   .lastname-shadow{
-    margin-left:-40px;
+    margin-left:-45px;
     color:white;
     -webkit-text-stroke-color: white;
   }
