@@ -17,13 +17,13 @@ a{
 a:visited{
   color:grey;
 }
+
 /* background color for the middle */
 .outer{
   margin: auto;
   position: relative;
   background-color: #95bdc1;
   box-shadow: 0px 0px 50px darkgray;
-
   /* border: solid 2px blue; */
 }
 
@@ -54,7 +54,7 @@ a:visited{
 
 #inner-container > section{
   width: 300px;
-  margin-top:50px;
+  margin-top:30px;
   margin-left: 20px;
   margin-right: 20px;
   /* border: solid 2px black; */
@@ -71,6 +71,7 @@ li{
 }
 
 footer{
+  box-shadow: 0px 0px 25px darkgray;
   position: fixed;
   bottom:0;
   background-color: #282b2d;
@@ -78,7 +79,7 @@ footer{
   text-align: center;
   font-size: 15px;
   color:white;
-  height:10%;
+  height:12%;
 }
 
 footer p{
@@ -113,18 +114,16 @@ footer a{
     -webkit-text-stroke-color: white;
   }
 
-
   .lastname, .lastname-shadow{
     position: absolute;
     font-family: arial black;
     margin-left:-50px;
-    margin-top:0px;
     display: block;
     text-align: left;
     color: black;
     -webkit-text-fill-color: #95bdc1; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
-    margin-top:30px;
+    margin-top:35px;
   }
 
   .lastname-shadow{
@@ -146,12 +145,17 @@ footer a{
   h2{
     font-size: 16px;
   }
+
   li{
     font-size: 12px;
   }
 
+  footer p:first-of-type{
+    padding-top:10px;
+  }
+
   footer p{
     line-height: 7px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
