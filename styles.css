@@ -5,26 +5,18 @@ body{
   padding:0;
 }
 
-
-h1{
-  text-align: center;
+.name, .lastname, .name-shadow, .lastname-shadow{
+  display: none;
 }
-
 
 a{
   color:black;
   text-decoration: none;
 }
 
-/* .wrapper{
-  width: 80%;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: red;
-
-} */
-
+a:visited{
+  color:grey;
+}
 /* background color for the middle */
 .outer{
   margin: auto;
@@ -44,7 +36,7 @@ a{
   bottom: 0;
 }
 
-.name{
+.nameanimation{
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -86,7 +78,7 @@ footer{
   text-align: center;
   font-size: 15px;
   color:white;
-  height:100px;
+  height:10%;
 }
 
 footer p{
@@ -95,4 +87,71 @@ footer p{
 
 footer a{
   color:white;
+}
+
+@media (max-width: 600px){
+  svg{
+    display: none;
+  }
+
+  .name, .name-shadow{
+    position: absolute;
+    font-family: arial black;
+    margin-left:-50px;
+    margin-top:0px;
+    display: block;
+    text-align: left;
+    color: black;
+    -webkit-text-fill-color: #95bdc1; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .name-shadow{
+    margin-top:-3px;
+    margin-left:-40px;
+    color:white;
+    -webkit-text-stroke-color: white;
+  }
+
+
+  .lastname, .lastname-shadow{
+    position: absolute;
+    font-family: arial black;
+    margin-left:-50px;
+    margin-top:0px;
+    display: block;
+    text-align: left;
+    color: black;
+    -webkit-text-fill-color: #95bdc1; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    margin-top:30px;
+  }
+
+  .lastname-shadow{
+    margin-left:-40px;
+    color:white;
+    -webkit-text-stroke-color: white;
+  }
+
+  .outer{
+    margin: auto;
+    position: relative;
+  }
+
+  .nameanimation{
+    padding-top: 20px;
+    height:100px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+  li{
+    font-size: 12px;
+  }
+
+  footer p{
+    line-height: 7px;
+    font-size: 10px;
+  }
 }
