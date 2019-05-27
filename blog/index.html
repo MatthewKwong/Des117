@@ -21,7 +21,7 @@
         /* padding-bottom: 10px; */
       }
 
-      #sticky h1{
+      #sticky #logo{
         /* margin-left: -35px; */
         font-weight: 900;
         padding:8px;
@@ -29,15 +29,14 @@
         text-decoration: none;
       }
 
-      #sticky h1 a{
+      #sticky #logo a{
         color:white;
         text-decoration: none;
       }
 
-      #sticky h1 a:visited{
+      #sticky #logo a:visited{
         text-decoration: none;
       }
-
 
       /*Navbar*/
       nav{
@@ -161,6 +160,10 @@
           margin-bottom:-20px;
         }
 
+        #logo{
+          left:0;
+        }
+        
         #container{
           width:100% !important;
           height: 115vh;
@@ -234,13 +237,15 @@
       #index-footer {
       	background-color: #282b2d;
       	text-align: center;
-      	height: 50px;
+      	padding: 10px;
       	color: white;
       	width: 100%;
       }
 
       #index-footer p{
-      	padding-top: 12px;
+        font-size: 15px;
+        line-height: 10px;
+      	/* padding-top: 12px; */
       }
 
       #section{
@@ -255,8 +260,6 @@
         display: inline-block;
         padding-left:80px;
       }
-
-
 
       .left-outline h1{
         margin-top: 20%;
@@ -312,7 +315,7 @@
 
   <body>
     <div id = "sticky">
-      <h1><a href = "../index.html">MATTHEW KWONG</a></h1>
+      <h1 id = "logo"><a href = "../index.html">MATTHEW KWONG</a></h1>
     </div>
 
     <header>
@@ -428,6 +431,8 @@
     </section>
 
     <footer id = "index-footer">
+      <p>Matthew Kwong</p>
+      <p><a href = "mailto:&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
       <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
     </footer>
 

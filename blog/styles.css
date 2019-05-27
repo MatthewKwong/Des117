@@ -13,8 +13,6 @@ nav{
   height: 50px;
   width: 100%;
   z-index: 1;
-  /* background-color: white; */
-  /* display: none; */
 }
 
 
@@ -172,6 +170,9 @@ right page content is scrollable, but the page itself is not.*/
 }
 
 @media (max-width: 700px){
+  #logo{
+    left:0;
+  }
 
   body::-webkit-scrollbar {
     display: none;
@@ -222,8 +223,6 @@ right page content is scrollable, but the page itself is not.*/
   margin-top: 10%;
   right:0px;
   height: 65%;
-  /* overflow: scroll; */
-  /* border: solid 2px red; */
   display: block;
 }
 
@@ -253,11 +252,12 @@ right page content is scrollable, but the page itself is not.*/
   margin-right: auto;
 }
 
-
+li{
+  list-style-type: none;
+}
 
 .footer{
-  /* border: solid 2px blue; */
-  height: 50px;
+  padding: 20px;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -265,10 +265,6 @@ right page content is scrollable, but the page itself is not.*/
   color:white;
   font-family: 'Roboto', sans-serif;
   display: inline-block;
-}
-
-li{
-  list-style-type: none;
 }
 
 footer a{
@@ -285,41 +281,41 @@ footer a:visited{
   clear:both;
   /* border: solid 2px red; */
   position: absolute;
-  left: 30px;
+  float: left;
+  width : 100px;
+  padding:20px;
+  top:0;
+  left:0px;
+  text-align: center;
+}
+
+#side-buttons #next{
+  position: absolute;
   float: right;
   width : 100px;
   padding:20px;
   top:0;
-  left:0;
+  text-align: center;
+  right:30px;
 }
+
+#validator{
+  top: 20px;
+  left: -20px;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  width:100%;
+  font-size:15px;
+}
+
 
 #side-buttons #previous:hover{
   background-color:#606060;
     color:white;
-
 }
 
 #side-buttons #next:hover{
   background-color:#606060;
   color:white;
-}
-
-
-#side-buttons #next{
-  position: absolute;
-  float: left;
-  width : 100px;
-  padding:20px;
-  top:0;
-  right:-20px;
-}
-
-#validator{
-  top: 20px;
-  left: 0;
-  right: 0;
-  position: absolute;
-  text-align: center;
-  width:100%;
-  /* border: solid 2px black; */
 }
