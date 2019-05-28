@@ -43,9 +43,9 @@
                 .cls-1,.cls-2,.cls-3,.cls-4{
                   stroke-dasharray: 2000;
                   stroke-dashoffset:0;
-                  animation-name: draw, FillIn;
-                  animation-duration: 5s, 4s;
-                  animation-delay: 0s, 0.25s;
+                  animation-name: draw, fillIn;
+                  animation-duration: 5s, 5s;
+                  animation-delay: 0s, 0.5s;
                 }
 
                 @keyframes draw {
@@ -59,8 +59,7 @@
                   }
                 }
 
-
-                @keyframes FillIn {
+                @keyframes fillIn {
                   from { fill-opacity: 0; }
                   to { fill-opacity: 1; }
                 }

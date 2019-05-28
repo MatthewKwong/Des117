@@ -234,12 +234,6 @@ right page content is scrollable, but the page itself is not.*/
     display: none;
 }
 
-#left-outline img{
-  width:75%;
-  height:auto;
-}
-
-
 #right-outline img{
   display: flex;
   align-items: center;
