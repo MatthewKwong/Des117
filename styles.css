@@ -3,6 +3,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding:0;
+  overflow: hidden;
 }
 
 .name, .lastname, .name-shadow, .lastname-shadow{
@@ -76,14 +77,15 @@ li{
 
 footer{
   box-shadow: 0px 0px 25px darkgray;
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   bottom:0;
   background-color: #282b2d;
   width: 100%;
   text-align: center;
   font-size: 15px;
   color:white;
-  height:12%;
+  padding: 20px;
 }
 
 footer p{
@@ -95,9 +97,6 @@ footer a{
 }
 
 @media (max-width: 600px){
-  body{
-    overflow-x: scroll;
-  }
   svg{
     display: none;
   }
@@ -155,9 +154,7 @@ footer a{
     font-size: 12px;
   }
 
-  footer p:first-of-type{
-    padding-top:10px;
-  }
+
 
   footer p{
     line-height: 7px;
