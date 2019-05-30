@@ -77,12 +77,11 @@ li{
 
 footer{
   box-shadow: 0px 0px 25px darkgray;
-  position: absolute;
-  bottom:0;
+  position: absolute !important;
+  margin-bottom:0 !important;
   background-color: #282b2d;
   width: 100%;
   text-align: center;
-  font-size: 15px;
   color:white;
   padding: 20px;
 }
@@ -96,7 +95,10 @@ footer a{
 }
 
 @media (max-width: 600px){
-
+  #inner-container > section{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
   svg{
     display: none;
   }
@@ -130,14 +132,10 @@ footer a{
   }
 
   .lastname-shadow{
+    margin-top:33px;
     margin-left:-45px;
     color:white;
     -webkit-text-stroke-color: white;
-  }
-
-  .outer{
-    margin: auto;
-    position: relative;
   }
 
   .nameanimation{
@@ -155,6 +153,7 @@ footer a{
   }
 
   footer{
+
     padding: 5px;
   }
 
