@@ -95,6 +95,9 @@ footer a{
 }
 
 @media (max-width: 600px){
+  body{
+    overflow-x: scroll;
+  }
   svg{
     display: none;
   }
