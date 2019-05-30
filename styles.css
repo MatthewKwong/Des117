@@ -10,7 +10,7 @@ body{
 }
 
 a{
-  color:black;
+  color:#333;
   text-decoration: none;
 }
 
@@ -57,7 +57,10 @@ a:visited{
   margin-top:20px;
   margin-left: 20px;
   margin-right: 20px;
-  /* border: solid 2px black; */
+}
+
+h2{
+  font-size:25px;
 }
 
 ul{
