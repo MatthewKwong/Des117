@@ -97,6 +97,10 @@ footer a{
 }
 
 @media (max-width: 600px){
+  body{
+      overflow-y: scroll;
+  }
+
   svg{
     display: none;
   }
@@ -154,8 +158,9 @@ footer a{
     font-size: 12px;
   }
 
-
-
+  footer{
+    padding: 10px;
+  }
   footer p{
     line-height: 7px;
     font-size: 12px;
