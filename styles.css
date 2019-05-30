@@ -69,6 +69,7 @@ ul{
 }
 
 li{
+  line-height:  27px;
   font-size: 17px;
   list-style-type: none;
 }
