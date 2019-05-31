@@ -10,80 +10,82 @@
     <title>Matthew Kwong's Portal Page</title>
   </head>
   <body>
-    <div class = "outer">
-      <div class = "nameanimation">
-        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 166.14">
-           <defs>
-              <style>
-                .cls-1, .cls-4{
-                  font-size:70px;
-                  fill:none;
-                  stroke-miterlimit:10;
-                  font-family:Arial-Black, Arial Black;
-                  font-weight:800;
+    <div class = "megaouter">
+      <div class = "outer">
+        <div class = "nameanimation">
+          <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 166.14">
+             <defs>
+                <style>
+                  /*Name Animation*/
+                  .cls-1, .cls-4{
+                    font-size:70px;
+                    fill:none;
+                    stroke-miterlimit:10;
+                    font-family:Arial-Black, Arial Black;
+                    font-weight:800;
+                    }
+                  .cls-1{
+                    stroke:#333;
+                    fill: #333;
+                    /* animation: FillIn 3s linear forwards; */
+                    }
+                  .cls-2{
+                    letter-spacing:-0.02em;
+                    }
+                  .cls-3{
+                    letter-spacing:-0.07em;
                   }
-                .cls-1{
-                  stroke:#333;
-                  fill: #333;
-                  /* animation: FillIn 3s linear forwards; */
+                  .cls-4{
+                    stroke:#fff;
+                    fill:#fff;
+                    /* animation: FillIn 6s linear forwards; */
                   }
-                .cls-2{
-                  letter-spacing:-0.02em;
+
+                .cls-1,.cls-2,.cls-3,.cls-4{
+                  stroke-dasharray: 2000;
+                  stroke-dashoffset:0;
+                  animation-name: draw, fillIn;
+                  animation-duration: 5s, 5s;
+                  animation-delay: 0s, 0.5s;
+                }
+
+                @keyframes draw {
+                  from {
+                    fill: none;
+                    stroke-dashoffset: 2000;
                   }
-                .cls-3{
-                  letter-spacing:-0.07em;
-                }
-                .cls-4{
-                  stroke:#fff;
-                  fill:#fff;
-                  /* animation: FillIn 6s linear forwards; */
+
+                  to {
+                    stroke-dashoffset: 0;
+                  }
                 }
 
-              .cls-1,.cls-2,.cls-3,.cls-4{
-                stroke-dasharray: 2000;
-                stroke-dashoffset:0;
-                animation-name: draw, fillIn;
-                animation-duration: 5s, 5s;
-                animation-delay: 0s, 0.5s;
-              }
-
-              @keyframes draw {
-                from {
-                  fill: none;
-                  stroke-dashoffset: 2000;
+                @keyframes fillIn {
+                  from { fill-opacity: 0; }
+                  to { fill-opacity: 1; }
                 }
-
-                to {
-                  stroke-dashoffset: 0;
-                }
-              }
-
-              @keyframes fillIn {
-                from { fill-opacity: 0; }
-                to { fill-opacity: 1; }
-              }
-            </style>
-           </defs>
-           <text class="cls-1" transform="translate(0.5 144.18)">
-              K
-              <tspan class="cls-2" x="58.31" y="0">W</tspan>
-              <tspan x="127.11" y="0">ONG</tspan>
-           </text>
-           <text class="cls-1" transform="translate(0.5 62.62)">
-              M
-              <tspan class="cls-3" x="66.07" y="0">A</tspan>
-              <tspan x="115.7" y="0">TTHEW</tspan>
-           </text>
-           <text class="cls-4" transform="translate(13.25 60.56)">
-              M
-              <tspan class="cls-3" x="66.07" y="0">A</tspan>
-              <tspan x="115.7" y="0">TTHEW</tspan>
-           </text>
-           <text class="cls-4" transform="translate(13.25 139.91)">
-              K
-              <tspan class="cls-2" x="58.31" y="0">W</tspan>
-              <tspan x="127.11" y="0">ONG</tspan>
-           </text>
+              </style>
+            </defs>
+          <text class="cls-1" transform="translate(0.5 144.18)">
+            K
+            <tspan class="cls-2" x="58.31" y="0">W</tspan>
+            <tspan x="127.11" y="0">ONG</tspan>
+          </text>
+          <text class="cls-1" transform="translate(0.5 62.62)">
+            M
+            <tspan class="cls-3" x="66.07" y="0">A</tspan>
+            <tspan x="115.7" y="0">TTHEW</tspan>
+          </text>
+          <text class="cls-4" transform="translate(13.25 60.56)">
+            M
+            <tspan class="cls-3" x="66.07" y="0">A</tspan>
+            <tspan x="115.7" y="0">TTHEW</tspan>
+          </text>
+          <text class="cls-4" transform="translate(13.25 139.91)">
+            K
+            <tspan class="cls-2" x="58.31" y="0">W</tspan>
+            <tspan x="127.11" y="0">ONG</tspan>
+          </text>
         </svg>
         <h1 class = "name">MATTHEW</h1>
         <h1 class = "name-shadow">MATTHEW</h1>
@@ -92,45 +94,47 @@
         <img id = "self" src = "self.png" alt = "self image">
       </div>
     </div>
+  </div>
 
-    <div id = "inner-container">
-      <section id = "majorProjects">
-        <h2>Major Projects</h2>
-        <ul>
-          <li><a href = "blog">Blog</a></li>
-          <li><a href = "portfolio">Portfolio</a></li>
-        </ul>
-      </section>
+  <div id = "inner-container">
+    <section id = "majorProjects">
+      <h2>Major Projects</h2>
+      <ul>
+        <li><a href = "blog">Blog</a></li>
+        <li><a href = "portfolio">Portfolio</a></li>
+      </ul>
+    </section>
 
-      <section id = "exercise">
-        <h2>Exercises</h2>
-        <ul>
-          <li><a href = "personalsite">Personal Site</a></li>
-          <li><a href = "lemmings">Lemmings</a></li>
-          <li><a href = "article">Article Markup</a></li>
-          <li><a href = "fonttest">Font Test</a></li>
-          <li><a href = "css-backgrounds">CSS Backgrounds</a></li>
-          <li><a href = "floatExamples">Float Challenges</a></li>
-          <li><a href = "positioning">Positioning Challenges</a></li>
-          <li><a href = "reviewSiteStart">Responsive Layout</a></li>
-          <li><a href = "dropdownmenus-start">Drop Down Menus</a></li>
-          <li><a href = "CSSGrid-Start">CSS Grid</a></li>
-          <li><a href = "SimpleAnimation-START">CSS Animation</a></li>
-        </ul>
-      </section>
+    <section id = "exercise">
+      <h2>Exercises</h2>
+      <ul>
+        <li><a href = "personalsite">Personal Site</a></li>
+        <li><a href = "lemmings">Lemmings</a></li>
+        <li><a href = "article">Article Markup</a></li>
+        <li><a href = "fonttest">Font Test</a></li>
+        <li><a href = "css-backgrounds">CSS Backgrounds</a></li>
+        <li><a href = "floatExamples">Float Challenges</a></li>
+        <li><a href = "positioning">Positioning Challenges</a></li>
+        <li><a href = "reviewSiteStart">Responsive Layout</a></li>
+        <li><a href = "dropdownmenus-start">Drop Down Menus</a></li>
+        <li><a href = "CSSGrid-Start">CSS Grid</a></li>
+        <li><a href = "SimpleAnimation-START">CSS Animation</a></li>
+      </ul>
+    </section>
 
-      <section id = "tools">
-        <h2>Links and Tools</h2>
-        <ul>
-          <li><a href = "http://www.wbwip.com/wbw/emailencoder.html">Email Enconder</a></li>
-          <li><a href = "https://fonts.google.com/">Google Fonts</a></li>
-          <li><a href = "https://coolors.co">Color Scheme Generator</a></li>
-          <li><a href = "https://cssgradient.io/">CSS Gradient</a></li>
-          <li><a href = "https://www.cssmatic.com/box-shadow">Box Shadow</a></li>
-          <li><a href = "https://matthewlein.com/tools/ceaser">CSS Easing Animation Tool</a></li>
-        </ul>
-      </section>
-    </div>
+    <section id = "tools">
+      <h2>Links and Tools</h2>
+      <ul>
+        <li><a href = "http://www.wbwip.com/wbw/emailencoder.html">Email Enconder</a></li>
+        <li><a href = "https://fonts.google.com/">Google Fonts</a></li>
+        <li><a href = "https://coolors.co">Color Scheme Generator</a></li>
+        <li><a href = "https://cssgradient.io/">CSS Gradient</a></li>
+        <li><a href = "https://www.cssmatic.com/box-shadow">Box Shadow</a></li>
+        <li><a href = "https://matthewlein.com/tools/ceaser">CSS Easing Animation Tool</a></li>
+      </ul>
+    </section>
+  </div>
+
 
     <footer>
       <p>Matthew Kwong</p>
