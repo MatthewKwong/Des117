@@ -141,6 +141,65 @@ h1{
   transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+/*Each Page*/
+
+.left-outline img{
+  transition: transform .2s;
+}
+
+.left-outline img:hover{
+  box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+.left-outline embed{
+  height: 600px;
+  width: 700px;
+}
+
+#processbook-image{
+  display: none;
+}
+
+#side-buttons #next{
+  width: 275px;
+}
+
+#side-buttons #previous{
+  width: 275px;
+}
+
+.blue{
+  color:#addbe8;
+}
+
+.left-blue{
+  background-color:#addbe8;
+}
+
+#right-contents{
+  padding: 10px 60px 60px 60px;
+}
+
+.blue-contents a, .blue-contents h2{
+  color:#addbe8;
+}
+
+@media (max-width: 600px){
+  #processbook-image{
+    display: block;
+  }
+  .left-outline embed{
+    display: none;
+  }
+}
+
+
+
+
+
+
 footer {
   background-color: #282b2d;
   text-align: center;

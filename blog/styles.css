@@ -130,8 +130,8 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: solid 2px orange; */
   min-height:100vh;
+  /* border: solid 2px orange; */
 }
 
 .left-outline img{
@@ -139,6 +139,7 @@ section{
   max-width: 50%;
   height:auto;
   width:auto;
+  border: 10px solid #282b2d;
 }
 
 .left-blue{
@@ -153,9 +154,10 @@ section{
   background-color:#4F8E75;
 }
 
+/*
 #futureTech, #unitrans, #roboto, #mobileDesktop, #coreModel{
   border: 10px solid #282b2d;
-}
+} */
 
 /*Had to use this to cheat way through of having the scroll types
 switch whent he screen size was on mobile. On web I have it so the
