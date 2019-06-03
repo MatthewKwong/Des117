@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../blog/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Portfolio | Design 117: Blog</title>
+  </head>
+  <body>
+
+    <style>
+      #blog{
+        min-width: 70%;
+      }
+
+      .left-outline img{
+        /* transition: transform .2s; */
+      }
+
+      .left-outline img:hover{
+        box-shadow: -4px 20px 25px -4px rgba(0,0,0,0);
+        transform: scale(1);
+      }
+
+    </style>
+
+    <header>
+      <nav>
+        <h1 id = "logo"><a href = "index.html">MATTHEW <span class = "blue">KWONG</span></a></h1>
+      </nav>
+    </header>
+
+    <!--Using class instead of ID because CSS will be used for ALL blog posts-->
+    <div id = "container">
+      <section class = "left-outline left-blue">
+        <a href = "../blog">
+          <img src = "images/web-blog.jpg" alt = "Blog Index Page" id = "blog">
+        </a>
+      </section>
+
+      <section id = "right-outline">
+        <article id = "right-contents" class = "blue-contents">
+          <h1>Design 117: Blog</h1>
+          <h2>Challenge Statement:</h2>
+          <p>Create a blog in HTML and CSS to display article summaries presented
+             as homework for class.</p>
+
+          <h2>Solution Statement</h2>
+          <p>For this assignment I am most proud of both the visual and responsiveness
+             of the site I’ve made. Before making the site I created a markup in
+              Adobe Illustrator. I believe that my execution of the blog was
+              very successful and better than what I had originally imagined.
+              Although I’ve changed the opening design layout, I believe that it
+               was for the better and visually looks a lot better than how I had
+                originally imagined for it. For this project I used HTML, CSS, and
+                 Adobe Illustrator to create the graphics. This project can be found
+                 on GitHub at
+                 <a href = "https://www.matthewkwong.com/design117/blog/">https://www.matthewkwong.com/design117/blog/</a></p>
+        </article>
+      </section>
+    </div>
+
+    <footer class = "footer">
+      <ul id = "side-buttons">
+        <li id = "validator"><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></li>
+        <li><a href = "web-homeless-helper.html" id = "previous">Help the Homies</a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>

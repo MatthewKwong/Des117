@@ -1,15 +1,20 @@
 body{
   overflow-x:hidden;
   margin: 0 auto;
-  font-family: arial;
 }
 
 body::-webkit-scrollbar {
    display: none;
  }
 
-h1{
-  text-align: center;
+
+#about-me{
+  box-sizing: border-box;
+  border: solid 3px blue;
+  margin-top:50px;
+  background-color: white;
+  height: 95vh;
+  width: 100%;
 }
 
 .web-project{
@@ -51,10 +56,10 @@ h1{
   width: 40%;
 }
 
-
 .left h2{
   margin-top:100px;
   font-size: 1.75em;
+  font-weight: 900;
 }
 /*Height distance between the learn more box*/
 .left p:last-of-type{
@@ -62,17 +67,32 @@ h1{
 }
 
 .left .button{
-  border: solid 5px black;
+  color: #addbe8;
+  font-family: roboto;
+  background-color: white;
+  border: solid 5px #addbe8;
+  border-radius: 10px;
   text-decoration: none;
   padding: 15px;
   font-size: 15px;
+  transition: .2s;
+}
+
+.button a{
+  text-decoration: none;
+}
+
+ a:visited{
+  text-decoration: none;
+  color: #addbe8
 }
 
 .button:hover{
-  background-color:#e7e7e7;
+  background-color:#addbe8;
   color:white;
 }
 
+/*Separates the web dev projects from each other */
 .section-divider{
   width: 40%;
   height: 20px;
@@ -83,21 +103,25 @@ h1{
   background-color:#addbe8;
 }
 
+/*2 Bars*/
 .second-section-divider{
   width: 30%;
   height: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
   background-color:#addbe8;
 }
 
-.divider-flex
-{
-  margin-left: 10%;
-  margin-right:10%;
+.divider-flex{
+  width: 100%;
+  padding-top: 20px;
   display: flex;
+}
+
+/*So the Web Design Divider doesnt have it */
+.divider-flex:last-of-type{
+  background-color: #F6F6F6;
 }
 
 .divider-flex h1{
@@ -108,6 +132,7 @@ h1{
 #gallery-container{
   width: 100%;
   height: auto;
+  background-color: #F6F6F6;
   /* box-sizing: border-box;
   border:solid 10px black;
   background-color:red; */
@@ -115,7 +140,6 @@ h1{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom:20px;
 }
 
 
@@ -129,6 +153,8 @@ h1{
 
 .image{
   position: relative;
+  box-sizing: border-box;
+  border: 10px solid #282b2d;
   /* max-height: 100vh; */
   height: auto;
   max-width: 42vh;
@@ -138,7 +164,7 @@ h1{
 
 .image:hover {
   box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
-  transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.04);
 }
 
 /*Each Page*/
@@ -149,8 +175,7 @@ h1{
 
 .left-outline img:hover{
   box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-
+  transform: scale(1.1);
 }
 
 .left-outline embed{
@@ -195,19 +220,18 @@ h1{
   }
 }
 
-
-
-
-
-
 footer {
   background-color: #282b2d;
   text-align: center;
-  padding: 5px;
+  /* padding: 5px; */
   color: white;
   width: 100%;
+  position: absolute;
 }
 
+footer p{
+  line-height: 10px;
+}
 footer a{
   color:white;
 }
