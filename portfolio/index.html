@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="../blog/styles.css">
@@ -11,11 +11,12 @@
   </head>
   <body>
     <style>
-      #logo{
+      /* #logo{
         left: 0px;
 
-      }
+      } */
       body{
+        margin: auto 0;
         overflow-y: scroll;
         /* margin-top:200px; */
       }
@@ -26,15 +27,331 @@
       <h1 id = "logo"><a href = "../index.html">MATTHEW <span class = "blue">KWONG</span></a></h1>
       </nav>
     </header>
+<!--
+    <section id = "portfolio-outline">
+      <section id = "about-me">
 
-    <section id = "about-me">
+
+      </section>
+
 
     </section>
+
+ -->
+ <style>
+
+ #intro-outline{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   padding: 30px;
+   margin:30px;
+
+ }
+
+ #intro{
+   background-color: white;
+   margin-top: 50px;
+   height:70vh;
+   width: 80%;
+   padding: 30px;
+ }
+
+ #intro p{
+   line-height: 30px;
+   font-size: 14.5px;
+
+ }
+
+ #name{
+   color:#8bd1e1;
+   text-align: left;
+ }
+
+ #intro h2{
+   color:#97dff0;
+ }
+
+ #me{
+   /* position: relative; */
+   border: none;
+   float: right;
+   /* margin: 10px; */
+   margin-top:0px;
+   max-width: 50%;
+   padding:10px;
+   text-align: wrap;
+ }
+
+ #right-contents{
+   padding: 0px;
+ }
+
+#right-outline{
+  background-color: white;
+  margin-top:0px;
+  /* box-sizing: border-box;
+  border: solid 2px black; */
+  height:100vh;
+  overflow-y: hidden;
+}
+
+#c h1{
+  margin-top:-35%;
+  position: absolute;
+  /* margin-top: 20px; */
+  text-align: center;
+  width: 100%;
+}
+
+#c{
+  height:100vh;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-container {
+  /* margin-top:330px; */
+ /* border: solid 2px red;
+ background-color: DodgerBlue; */
+ /* height: 94.75vh; */
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+
+.box {
+ position: relative;
+ /*Big screens make it 200*/
+ /* width: 225px;
+ height:225px; */
+ box-shadow: 0px 0px 20px darkgray;
+
+ width: 225px;
+ height:225px;
+
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 100%;
+ /* box-sizing: border-box; */
+ /* border: black 2px solid; */
+ /*Macbook screen make it 150 but make sure it becomes 2 columns still*/
+  margin:20px;
+  padding:20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+#box1{
+  background-color: white;
+  /* background-image:url("images/homies.jpg"); */
+}
+
+#box2{
+  background-image:url("images/web-blog.jpg");
+}
+
+#box3{
+  background-image:url("images/processbook.jpg");
+}
+
+#box4{
+  background-image:url("images/toilet.jpg");
+
+}
+
+#box5{
+  background-image:url("images/taxi-cab.jpg");
+
+}
+
+#box6{
+  background-image:url("images/travel.jpg");
+}
+
+
+@media only screen and (max-width: 1500px) {
+
+  .box {
+    padding:5px;
+    margin:10px;
+    width:209px;
+    height:209px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .box {
+    padding:5px;
+    margin:10px;
+    width:175px;
+    height:175px;
+  }
+  #intro p{
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 810px) {
+
+
+  .box {
+    padding:5px;
+    margin:10px;
+    width:150px;
+    height:150px;
+  }
+
+  #c{
+    margin-top: -50px;
+    height:100vh;
+  }
+
+  #right-outline{
+    margin-top: 0px;
+    height: 90vh;
+  }
+
+  #intro p{
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .divider-flex-first{
+    /* position: absolute; */
+    margin-top:100vh;
+  }
+}
+
+/* @media only screen and (max-width: 600px) { */
+  #intro-outline{
+    padding: 10px;
+    margin:0px;
+    margin-top:50px;
+  }
+
+  #intro{
+    background-color: white;
+    /* margin-top: 50px; */
+    height:70vh;
+    width: 80%;
+    padding: 30px;
+  }
+
+  #intro h1{
+    font-size: 25px;
+    line-height: 10px;
+  }
+
+  #intro h2{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  #intro p{
+    line-height: 18px;
+    font-size: 15px;
+  }
+}
+
+</style>
+
+
+    <div id = "container">
+
+      <section class = "left-outline left-blue">
+
+        <div id = "top-box"></div>
+        <div id = "bottom-box"></div>
+
+        <div id = "intro-outline">
+          <div id = "intro">
+
+            <h1 id = "name">Hi, I'm Matthew</h1>
+            <h2>Designer + Developer</h2>
+
+
+            <img src = "images/me.jpg" alt = "picture of matthew" id = "me">
+
+            <p> I'm currently a second year Design major and Computer Science
+              minor at UC Davis.</p>
+
+            <p>Although, I haven't desided on a specific design focus,
+             I am currently looking into going into
+             UI/UX or front-end web development.</p>
+
+            <p>Using the skills I've learned from this class, I have created
+               this online portfolio to showcase some of the works I'm most proud of.
+              Here you can see some of my web development projects and
+              design projects from my classes here at Davis. </p>
+
+
+
+
+          </div>
+        </div>
+
+      </section>
+
+      <section id = "right-outline">
+        <article id = "right-contents" class = "blue-contents">
+
+
+          <div id = "c">
+            <h1>Portfolio</h1>
+
+            <div class="flex-container">
+              <a href = "web-homeless-helper.html">
+                <div class = "box" id = "box1">1</div>
+              </a>
+
+
+              <a href = "web-blog.html">
+                <div class = "box" id = "box2">2</div>
+              </a>
+
+
+              <a href = "design1.html">
+                <div class = "box" id = "box3">3</div>
+              </a>
+
+              <a href = "design14.html">
+                <div class = "box" id = "box4">4</div>
+              </a>
+
+              <a href = "design15-bw.html">
+                <div class = "box" id = "box5">5</div>
+              </a>
+
+              <a href = "design15-final.html">
+                <div class = "box" id = "box6">6</div>
+              </a>
+            </div>
+          </div>
+
+        </article>
+      </section>
+    </div>
+
+
 
     <!--Web Design Work-->
       <!-- <div id = "web-design"> -->
         <!--Help the Homies-->
-        <div class = "divider-flex">
+
+
+        <div class = "divider-flex divider-flex-first">
           <div class = "second-section-divider"></div>
             <h1 id = "web-design-h1"> Web Design </h1>
             <div class = "second-section-divider"></div>

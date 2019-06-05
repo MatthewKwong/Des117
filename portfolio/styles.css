@@ -7,14 +7,41 @@ body::-webkit-scrollbar {
    display: none;
  }
 
-
-#about-me{
+#portfolio-outline{
+  display: flex;
   box-sizing: border-box;
   border: solid 3px blue;
   margin-top:50px;
   background-color: white;
   height: 95vh;
   width: 100%;
+}
+
+
+#about-me{
+  box-sizing: border-box;
+  border: solid 3px red;
+  background-color: white;
+  height: 95vh;
+  left: 0;
+  width: 50%;
+  /* width: 100%;
+  top:50%; */
+}
+
+#preview{
+  box-sizing: border-box;
+  border: solid 3px orange;
+  background-color: white;
+  height: 95vh;
+  width: 50%;
+  /* right: 0;
+  position: absolute; */
+}
+
+#preview-grid{
+  display: flex;
+
 }
 
 .web-project{
@@ -173,10 +200,10 @@ body::-webkit-scrollbar {
   transition: transform .2s;
 }
 
-.left-outline img:hover{
+/* .left-outline img:hover{
   box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
   transform: scale(1.1);
-}
+} */
 
 .left-outline embed{
   height: 600px;
