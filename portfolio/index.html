@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Monoton|Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="../blog/styles.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -40,6 +40,7 @@
  -->
  <style>
 
+
  #intro-outline{
    display: flex;
    flex-wrap: wrap;
@@ -47,7 +48,6 @@
    justify-content: center;
    padding: 30px;
    margin:30px;
-
  }
 
  #intro{
@@ -84,12 +84,16 @@
    text-align: wrap;
  }
 
+
+/*Right portfolio */
+
+
  #right-contents{
    padding: 0px;
  }
 
 #right-outline{
-  background-color: white;
+  /* background-color: white; */
   margin-top:0px;
   /* box-sizing: border-box;
   border: solid 2px black; */
@@ -98,27 +102,29 @@
 }
 
 #c h1{
-  margin-top:-35%;
+  margin-top:-30%;
   position: absolute;
   /* margin-top: 20px; */
   text-align: center;
   width: 100%;
+  font-family: Monoton;
+  font-weight: 100;
+  font-size: 50px;
 }
 
 #c{
   height:100vh;
   display: flex;
   align-items: center;
-
   justify-content: center;
   text-align: center;
 }
 
+
+
 .flex-container {
-  /* margin-top:330px; */
- /* border: solid 2px red;
- background-color: DodgerBlue; */
- /* height: 94.75vh; */
+  /*Pushes the gallery down*/
+ margin-top: 20%;
  display: flex;
  flex-wrap: wrap;
  align-items: center;
@@ -131,9 +137,10 @@
  /* width: 225px;
  height:225px; */
  box-shadow: 0px 0px 20px darkgray;
-
- width: 225px;
- height:225px;
+ padding:5px;
+ margin:10px;
+ width:250px;
+ height:250px;
 
  background-repeat: no-repeat;
  background-position: center;
@@ -141,8 +148,7 @@
  /* box-sizing: border-box; */
  /* border: black 2px solid; */
  /*Macbook screen make it 150 but make sure it becomes 2 columns still*/
-  margin:20px;
-  padding:20px;
+
   text-align: center;
   font-size: 30px;
 }
@@ -181,8 +187,8 @@
   .box {
     padding:5px;
     margin:10px;
-    width:209px;
-    height:209px;
+    width:175px;
+    height:175px;
   }
 }
 
@@ -198,24 +204,30 @@
     font-size: 14px;
   }
 
-
 }
 
 
 
 @media only screen and (max-width: 810px) {
 
-
   .box {
-    padding:5px;
+    padding:10px;
     margin:10px;
-    width:150px;
-    height:150px;
+    width:130px;
+    height:130px;
   }
 
+  .flex-container{
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
   #c{
-    margin-top: -50px;
-    height:100vh;
+    border:solid 2px red;
+    /* margin-top: 25px; */
+  }
+
+  #c h1{
+    margin-top:-300px;
   }
 
   #right-outline{
@@ -223,18 +235,50 @@
     height: 90vh;
   }
 
+  .right img{
+    display: none;
+  }
+
+  .left{
+    border:solid 2px blue;
+    /* border: solid 3px black; */
+    width: 85%;
+  }
+
   #intro p{
     line-height: 20px;
     font-size: 14px;
   }
 
+  .section-divider, .second-section-divider{
+    display: none;
+  }
+  /*WEB DESIGN and DESIGN headings*/
+  #web-design-h1, #design-h1 {
+    margin-left: auto;
+    margin-right: auto;
+    /* border: solid 2px black; */
+  }
+
+  #web-design-h1{
+    margin-top:-50px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* .divider-flex, .divider-flex-first{
+    display: none;
+  } */
+
   .divider-flex-first{
     /* position: absolute; */
     margin-top:100vh;
   }
-}
-
-/* @media only screen and (max-width: 600px) { */
+  .second-section-divider{
+        display: none;
+  }
   #intro-outline{
     padding: 10px;
     margin:0px;
@@ -263,7 +307,54 @@
     line-height: 18px;
     font-size: 15px;
   }
+
+
 }
+
+
+
+/*Each Image Box in the Gallery*/
+
+
+ .gallery-image {
+   display: block;
+   /* width: 100%; */
+   height: auto;
+ }
+
+ .overlay {
+   position: absolute;
+   /* top: 0; */
+   bottom: 0;
+   left: 0;
+   /* right: 0; */
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   transition: .5s ease;
+   background: rgba(0, 0, 0, 0.5);
+ }
+
+ .gallery-container:hover .overlay {
+   opacity: 1;
+ }
+
+ .text {
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+
+ #intro #me:hover{
+   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+   transform: scale(1);
+ }
 
 </style>
 
@@ -313,31 +404,78 @@
 
             <div class="flex-container">
               <a href = "web-homeless-helper.html">
-                <div class = "box" id = "box1">1</div>
+                <div class = "gallery-container">
+                <div class = "box" id = "box1" class = "gallery-image">
+                    <div class="overlay">
+                      <div class="text">
+                        <p>Help the Homies</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </a>
 
 
               <a href = "web-blog.html">
-                <div class = "box" id = "box2">2</div>
+                <div class = "gallery-container">
+                <div class = "box" id = "box2" class = "gallery-image">
+                    <div class="overlay">
+                      <div class="text">
+                        <p>Blog</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </a>
 
 
               <a href = "design1.html">
-                <div class = "box" id = "box3">3</div>
-              </a>
+                <div class = "gallery-container">
+                <div class = "box" id = "box3" class = "gallery-image">
+                    <div class="overlay">
+                      <div class="text">
+                        <p>Design 1: Flick It</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </a>
 
               <a href = "design14.html">
-                <div class = "box" id = "box4">4</div>
+                <div class = "gallery-container">
+                <div class = "box" id = "box4" class = "gallery-image">
+                    <div class="overlay">
+                      <div class="text">
+                        <p>Design 14: Flowers Silhouette</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </a>
 
               <a href = "design15-bw.html">
-                <div class = "box" id = "box5">5</div>
+                <div class = "gallery-container">
+                <div class = "box" id = "box5" class = "gallery-image">
+                    <div class="overlay">
+                      <div class="text">
+                       <p>Design 15: Positive and Negative Space</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </a>
 
               <a href = "design15-final.html">
-                <div class = "box" id = "box6">6</div>
+                <div class = "gallery-container">
+                <div class = "box" id = "box6" class = "gallery-image">
+                    <div class="overlay">
+                      <div class="text">
+                        <p>Design 15: Final Project</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </a>
-            </div>
           </div>
 
         </article>
@@ -353,45 +491,47 @@
 
         <div class = "divider-flex divider-flex-first">
           <div class = "second-section-divider"></div>
-            <h1 id = "web-design-h1"> Web Design </h1>
+            <p id = "web-design-h1"> Web Design </p>
             <div class = "second-section-divider"></div>
         </div>
-        <div class = "web-project">
 
-          <section class = "left">
-            <h2>Help the Homies</h2>
-            <p>A web application built to help local homeless populations</p>
-            <p>Built using HTML, CSS, JavaScript, Bootstrap, Google Firebase, and Google Maps API</p>
-            <a href = "web-homeless-helper.html" class = "button">LEARN MORE</a>
-          </section>
+        <div id = "web-project-container">
+          <div class = "web-project">
+            <section class = "left">
+              <h2>Help the Homies</h2>
+              <p>A web application built to help local homeless populations</p>
+              <p>Built using HTML, CSS, JavaScript, Bootstrap, Google Firebase, and Google Maps API</p>
+              <a href = "web-homeless-helper.html" class = "button">LEARN MORE</a>
+            </section>
 
-          <section class = "right">
-            <img src = "images/homies.jpg" alt = "Help the Homeies">
-          </section>
-        </div>
+            <section class = "right">
+              <img src = "images/homies.jpg" alt = "Help the Homeies">
+            </section>
+          </div>
 
 
-        <!--Divider-->
-        <div class = "section-divider"></div>
+          <!--Divider-->
+          <div class = "section-divider"></div>
 
-        <!--Blog Page for Design 117-->
-        <div class = "web-project">
-          <section class = "left">
-            <h2>Design 117 Blog</h2>
-            <p>Learn more about my Design 117 blog for this class and the
-            creative process behind it.</p>
-            <a href = "web-blog.html" class = "button">LEARN MORE</a>
-          </section>
+          <!--Blog Page for Design 117-->
+          <div class = "web-project last-web-project">
+            <section class = "left">
+              <h2>Design 117 Blog</h2>
+              <p>Learn more about my Design 117 blog for this class and the
+              creative process behind it.</p>
+              <a href = "web-blog.html" class = "button">LEARN MORE</a>
+            </section>
 
-          <section class = "right">
-            <img src = "images/blog.png" alt = "Design 117 Blog">
-          </section>
+            <section class = "right">
+              <img src = "images/blog.png" alt = "Design 117 Blog">
+            </section>
+          </div>
         </div>
 
         <!--Divider-->
         <div class = "divider-flex">
           <div class = "second-section-divider"></div>
-            <h1>Design</h1>
+            <h1 id = "design-h1">Design</h1>
             <div class = "second-section-divider"></div>
         </div>
 
