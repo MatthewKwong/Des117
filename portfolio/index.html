@@ -7,360 +7,17 @@
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Monoton|Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="../blog/styles.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Matthew Kwong's Portfolio</title>
   </head>
-  <body>
-    <style>
-      /* #logo{
-        left: 0px;
 
-      } */
-      body{
-        margin: auto 0;
-        overflow-y: scroll;
-        /* margin-top:200px; */
-      }
-    </style>
 
+  <body style = "  overflow-y: scroll !important; overflow-x:hidden;">
     <header>
       <nav>
       <h1 id = "logo"><a href = "../index.html">MATTHEW <span class = "blue">KWONG</span></a></h1>
       </nav>
     </header>
-<!--
-    <section id = "portfolio-outline">
-      <section id = "about-me">
-
-
-      </section>
-
-
-    </section>
-
- -->
- <style>
-
-
- #intro-outline{
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   padding: 30px;
-   margin:30px;
- }
-
- #intro{
-   background-color: white;
-   margin-top: 50px;
-   height:70vh;
-   width: 80%;
-   padding: 30px;
- }
-
- #intro p{
-   line-height: 30px;
-   font-size: 14.5px;
-
- }
-
- #name{
-   color:#8bd1e1;
-   text-align: left;
- }
-
- #intro h2{
-   color:#97dff0;
- }
-
- #me{
-   /* position: relative; */
-   border: none;
-   float: right;
-   /* margin: 10px; */
-   margin-top:0px;
-   max-width: 50%;
-   padding:10px;
-   text-align: wrap;
- }
-
-
-/*Right portfolio */
-
-
- #right-contents{
-   padding: 0px;
- }
-
-#right-outline{
-  /* background-color: white; */
-  margin-top:0px;
-  /* box-sizing: border-box;
-  border: solid 2px black; */
-  height:100vh;
-  overflow-y: hidden;
-}
-
-#portfolio{
-  margin-top:-30%;
-  position: absolute;
-  /* margin-top: 20px; */
-  text-align: center;
-  width: 100%;
-  font-family: Monoton;
-  font-weight: 100;
-  font-size: 50px;
-}
-
-#c{
-  height:100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-
-
-.flex-container {
-  /*Pushes the gallery down*/
- margin-top: 20%;
- display: flex;
- flex-wrap: wrap;
- align-items: center;
- justify-content: center;
-}
-
-.box {
- position: relative;
- /*Big screens make it 200*/
- /* width: 225px;
- height:225px; */
- box-shadow: 0px 0px 20px darkgray;
- padding:5px;
- margin:10px;
- width:250px;
- height:250px;
-
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
- /* box-sizing: border-box; */
- /* border: black 2px solid; */
- /*Macbook screen make it 150 but make sure it becomes 2 columns still*/
-
-  text-align: center;
-  font-size: 30px;
-}
-
-
-#box1{
-  /* background-color: white; */
-  background-image:url("images/homies.jpg");
-}
-
-#box2{
-  background-image:url("images/web-blog.jpg");
-}
-
-#box3{
-  background-image:url("images/processbook.jpg");
-}
-
-#box4{
-  background-image:url("images/toilet.jpg");
-
-}
-
-#box5{
-  background-image:url("images/taxi-cab.jpg");
-
-}
-
-#box6{
-  background-image:url("images/travel.jpg");
-}
-
-
-@media only screen and (max-width: 1500px) {
-
-  .box {
-    padding:5px;
-    margin:10px;
-    width:175px;
-    height:175px;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .box {
-    padding:5px;
-    margin:10px;
-    width:175px;
-    height:175px;
-  }
-  #intro p{
-    line-height: 20px;
-    font-size: 14px;
-  }
-
-}
-
-
-
-@media only screen and (max-width: 810px) {
-
-   #intro{
-     margin-top: 0px;
-   }
-
-  .box {
-    padding:10px;
-    margin:10px;
-    width:130px;
-    height:130px;
-  }
-
-  .flex-container{
-    /* margin-top:20px; */
-    margin-bottom: 20px;
-  }
-
-  #c{
-    /* border:solid 2px red; */
-    /* margin-top: 25px; */
-  }
-
-  #portfolio{
-    margin-top:-275px;
-  }
-
-  #right-outline{
-    margin-top:90px;
-    height: 100vh;
-  }
-
-  .right img{
-    display: none;
-  }
-
-  .left{
-    /* border:solid 2px blue; */
-    /* border: solid 3px black; */
-    width: 85%;
-  }
-
-  #intro p{
-    line-height: 20px;
-    font-size: 14px;
-  }
-
-  .section-divider, .second-section-divider{
-    display: none;
-  }
-  /*WEB DESIGN and DESIGN headings*/
-  #web-design-h1, #design-h1 {
-    margin-left: auto;
-    margin-right: auto;
-    /* border: solid 2px black; */
-  }
-
-  #web-design-h1{
-    margin-top:40px;
-  }
-
-}
-
-@media only screen and (max-width: 600px) {
-  #web-project-container{
-    margin-top:-100px;
-  }
-
-  .divider-flex-first{
-    /* position: absolute; */
-    margin-top:100vh;
-  }
-  .second-section-divider{
-    display: none;
-  }
-  #intro-outline{
-    padding: 10px;
-    margin:0px;
-    margin-top:50px;
-  }
-
-  #intro{
-    background-color: white;
-    /* margin-top: 50px; */
-    height:70vh;
-    width: 80%;
-    padding: 30px;
-  }
-
-  #intro h1{
-    font-size: 25px;
-    line-height: 10px;
-  }
-
-  #intro h2{
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  #intro p{
-    line-height: 18px;
-    font-size: 15px;
-  }
-}
-
-
-
-/*Each Image Box in the Gallery*/
-
-
- .gallery-image {
-   display: block;
-   /* width: 100%; */
-   height: auto;
- }
-
- .overlay {
-   position: absolute;
-   /* top: 0; */
-   bottom: 0;
-   left: 0;
-   /* right: 0; */
-   height: 100%;
-   width: 100%;
-   opacity: 0;
-   transition: .5s ease;
-   background: rgba(0, 0, 0, 0.5);
- }
-
- .gallery-container:hover .overlay {
-   opacity: 1;
- }
-
- .text {
-   color: white;
-   font-size: 20px;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -webkit-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
-   text-align: center;
- }
-
- #intro #me:hover{
-   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-   transform: scale(1);
- }
-
-</style>
 
 
     <div id = "container">
@@ -392,20 +49,17 @@
               design projects from my classes here at Davis. </p>
           </div>
         </div>
-
       </section>
 
-      <section id = "right-outline">
-        <article id = "right-contents" class = "blue-contents">
-
-
-          <div id = "c">
-            <h1 id = "portfolio">Portfolio</h1>
+      <section id = "index-right-outline">
+      <article id = "index-right-contents" class = "blue-contents">
+        <div id = "c">
+          <h1 id = "portfolio">Portfolio</h1>
 
             <div class="flex-container">
               <a href = "web-homeless-helper.html">
                 <div class = "gallery-container">
-                <div class = "box" id = "box1" class = "gallery-image">
+                  <div class = "gallery-image, box" id = "box1">
                     <div class="overlay">
                       <div class="text">
                         <p>Help the Homies</p>
@@ -418,7 +72,7 @@
 
               <a href = "web-blog.html">
                 <div class = "gallery-container">
-                <div class = "box" id = "box2" class = "gallery-image">
+                  <div class = "gallery-image, box" id = "box2">
                     <div class="overlay">
                       <div class="text">
                         <p>Design 117: Blog</p>
@@ -431,7 +85,7 @@
 
               <a href = "design1.html">
                 <div class = "gallery-container">
-                <div class = "box" id = "box3" class = "gallery-image">
+                  <div class = "gallery-image, box" id = "box3">
                     <div class="overlay">
                       <div class="text">
                         <p>Design 1: Flick It</p>
@@ -443,7 +97,7 @@
 
               <a href = "design14.html">
                 <div class = "gallery-container">
-                <div class = "box" id = "box4" class = "gallery-image">
+                  <div class = "gallery-image, box" id = "box4">
                     <div class="overlay">
                       <div class="text">
                         <p>Design 14: Flowers Silhouette</p>
@@ -455,7 +109,7 @@
 
               <a href = "design15-bw.html">
                 <div class = "gallery-container">
-                <div class = "box" id = "box5" class = "gallery-image">
+                  <div class = "gallery-image, box" id = "box5">
                     <div class="overlay">
                       <div class="text">
                        <p>Design 15: Positive and Negative Space</p>
@@ -467,7 +121,7 @@
 
               <a href = "design15-final.html">
                 <div class = "gallery-container">
-                <div class = "box" id = "box6" class = "gallery-image">
+                  <div class = "gallery-image, box" id = "box6">
                     <div class="overlay">
                       <div class="text">
                         <p>Design 15: Final Project</p>
@@ -476,95 +130,88 @@
                   </div>
                 </div>
               </a>
+            </div>
           </div>
-
         </article>
       </section>
     </div>
 
+    <div class = "divider-flex divider-flex-first">
+      <div class = "second-section-divider"></div>
+        <p id = "web-design-h1"> Web Design </p>
+        <div class = "second-section-divider"></div>
+    </div>
+
+    <div id = "web-project-container">
+      <div class = "web-project">
+        <section class = "left">
+          <h2>Help the Homies</h2>
+          <p>A web application built to help local homeless populations</p>
+          <p>Built using HTML, CSS, JavaScript, Bootstrap, Google Firebase, and Google Maps API</p>
+          <a href = "web-homeless-helper.html" class = "button">LEARN MORE</a>
+        </section>
+
+        <section class = "right">
+          <img src = "images/homies.jpg" alt = "Help the Homeies">
+        </section>
+      </div>
 
 
-    <!--Web Design Work-->
-      <!-- <div id = "web-design"> -->
-        <!--Help the Homies-->
+      <!--Divider-->
+      <div class = "section-divider"></div>
+
+      <!--Blog Page for Design 117-->
+      <div class = "web-project last-web-project">
+        <section class = "left">
+          <h2>Design 117 Blog</h2>
+          <p>Learn more about my Design 117 blog for this class and the
+          creative process behind it.</p>
+          <a href = "web-blog.html" class = "button">LEARN MORE</a>
+        </section>
+
+        <section class = "right">
+          <img src = "images/blog.png" alt = "Design 117 Blog">
+        </section>
+      </div>
+    </div>
+
+    <!--Divider-->
+    <div class = "divider-flex">
+      <div class = "second-section-divider"></div>
+        <h1 id = "design-h1">Design</h1>
+        <div class = "second-section-divider"></div>
+    </div>
+
+    <!--Design 1, 14 and 15 Work-->
+    <section id = "gallery-container">
+        <!-- <div id = "left-button"></div>
+        <div id = "right-button"></div> -->
+
+      <!--Design 1 Process Book-->
+      <a href = "design1.html">
+        <img src="images/processbook.jpg" alt="design 1 process book" class = "image">
+      </a>
+
+      <!---->
+      <a href = "design14.html">
+        <img src="images/toilet.jpg" alt="Design 14 Toilet Flower Drawing" class = "image">
+      </a>
 
 
-        <div class = "divider-flex divider-flex-first">
-          <div class = "second-section-divider"></div>
-            <p id = "web-design-h1"> Web Design </p>
-            <div class = "second-section-divider"></div>
-        </div>
+      <a href = "design15-bw.html">
+        <img src="images/taxi-cab.jpg" alt="Taxi and Skull" class = "image">
+      </a>
 
-        <div id = "web-project-container">
-          <div class = "web-project">
-            <section class = "left">
-              <h2>Help the Homies</h2>
-              <p>A web application built to help local homeless populations</p>
-              <p>Built using HTML, CSS, JavaScript, Bootstrap, Google Firebase, and Google Maps API</p>
-              <a href = "web-homeless-helper.html" class = "button">LEARN MORE</a>
-            </section>
+      <!--Design 15 Final Project-->
+      <a href = "design15-final.html">
+        <img src="images/travel.jpg" alt="Design 15 Travel Book" class = "image">
+      </a>
+    </section>
 
-            <section class = "right">
-              <img src = "images/homies.jpg" alt = "Help the Homeies">
-            </section>
-          </div>
-
-
-          <!--Divider-->
-          <div class = "section-divider"></div>
-
-          <!--Blog Page for Design 117-->
-          <div class = "web-project last-web-project">
-            <section class = "left">
-              <h2>Design 117 Blog</h2>
-              <p>Learn more about my Design 117 blog for this class and the
-              creative process behind it.</p>
-              <a href = "web-blog.html" class = "button">LEARN MORE</a>
-            </section>
-
-            <section class = "right">
-              <img src = "images/blog.png" alt = "Design 117 Blog">
-            </section>
-          </div>
-        </div>
-
-        <!--Divider-->
-        <div class = "divider-flex">
-          <div class = "second-section-divider"></div>
-            <h1 id = "design-h1">Design</h1>
-            <div class = "second-section-divider"></div>
-        </div>
-
-      <!--Design 1, 14 and 15 Work-->
-      <section id = "gallery-container">
-          <!-- <div id = "left-button"></div>
-          <div id = "right-button"></div> -->
-
-        <!--Design 1 Process Book-->
-        <a href = "design1.html">
-          <img src="images/processbook.jpg" alt="design 1 process book" class = "image">
-        </a>
-
-        <!---->
-        <a href = "design14.html">
-          <img src="images/toilet.jpg" alt="Design 14 Toilet Flower Drawing" class = "image">
-        </a>
-
-
-        <a href = "design15-bw.html">
-          <img src="images/taxi-cab.jpg" alt="Taxi and Skull" class = "image">
-        </a>
-
-        <!--Design 15 Final Project-->
-        <a href = "design15-final.html">
-          <img src="images/travel.jpg" alt="Design 15 Travel Book" class = "image">
-        </a>
-      </section>
-
-      <footer>
-        <p>Matthew Kwong</p>
-        <p><a href = "mailto:&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
-        <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
-      </footer>
+    <footer>
+      <p>Matthew Kwong</p>
+      <p><a href = "mailto:&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#109;&#097;&#116;&#107;&#119;&#111;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
+      <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
+    </footer>
   </body>
 </html>
