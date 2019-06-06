@@ -132,12 +132,19 @@ body::-webkit-scrollbar {
 
 /*2 Bars*/
 .second-section-divider{
-  width: 30%;
+  width: 20%;
   height: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   background-color:#addbe8;
+}
+
+#web-design-h1, #design-h1 {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: Monoton;
+  text-align: center;
 }
 
 .divider-flex{
@@ -200,10 +207,10 @@ body::-webkit-scrollbar {
   transition: transform .2s;
 }
 
-/* .left-outline img:hover{
+# .left-outline img:hover{
   box-shadow: -4px 20px 25px -4px rgba(0,0,0,1);
   transform: scale(1.1);
-} */
+}
 
 .left-outline embed{
   height: 600px;
