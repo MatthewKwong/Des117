@@ -101,7 +101,7 @@
   overflow-y: hidden;
 }
 
-#c h1{
+#portfolio{
   margin-top:-30%;
   position: absolute;
   /* margin-top: 20px; */
@@ -210,6 +210,10 @@
 
 @media only screen and (max-width: 810px) {
 
+   #intro{
+     margin-top: 0px;
+   }
+
   .box {
     padding:10px;
     margin:10px;
@@ -218,21 +222,22 @@
   }
 
   .flex-container{
-    margin-top:20px;
+    /* margin-top:20px; */
     margin-bottom: 20px;
   }
+
   #c{
-    border:solid 2px red;
+    /* border:solid 2px red; */
     /* margin-top: 25px; */
   }
 
-  #c h1{
-    margin-top:-300px;
+  #portfolio{
+    margin-top:-275px;
   }
 
   #right-outline{
-    margin-top: 0px;
-    height: 90vh;
+    margin-top:90px;
+    height: 100vh;
   }
 
   .right img{
@@ -240,7 +245,7 @@
   }
 
   .left{
-    border:solid 2px blue;
+    /* border:solid 2px blue; */
     /* border: solid 3px black; */
     width: 85%;
   }
@@ -261,13 +266,15 @@
   }
 
   #web-design-h1{
-    margin-top:-50px;
+    margin-top:40px;
   }
 
 }
 
 @media only screen and (max-width: 600px) {
-
+  #web-project-container{
+    margin-top:-100px;
+  }
   /* .divider-flex, .divider-flex-first{
     display: none;
   } */
@@ -277,7 +284,7 @@
     margin-top:100vh;
   }
   .second-section-divider{
-        display: none;
+    display: none;
   }
   #intro-outline{
     padding: 10px;
@@ -307,8 +314,6 @@
     line-height: 18px;
     font-size: 15px;
   }
-
-
 }
 
 
@@ -400,7 +405,7 @@
 
 
           <div id = "c">
-            <h1>Portfolio</h1>
+            <h1 id = "portfolio">Portfolio</h1>
 
             <div class="flex-container">
               <a href = "web-homeless-helper.html">
