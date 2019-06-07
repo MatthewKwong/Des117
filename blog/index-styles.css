@@ -1,0 +1,312 @@
+body{
+  background-color:white;
+}
+
+nav{
+  position: fixed;
+  top:0;
+  background-color: #282b2d;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+#logo{
+  z-index: 2;
+  position: fixed;
+  left: -35px;
+  /* left:0; */
+  right: 0;
+
+  /* border: solid 2px white; */
+  text-align: center;
+  padding:4px;
+  margin-top: 4px;
+  /* color:black; */
+  color:white;
+}
+
+.left-outline a{
+  text-align: center;
+}
+
+h1 a{
+  font-weight: 900;
+  font-family: 'Arial Black' 'Arial Bold', Gadget, sans-serif;
+  color:white;
+  text-decoration: none;
+}
+
+h1 a:visited{
+  text-decoration: none;
+  color:white;
+}
+
+.blue{
+  color: #23b5d3;
+}
+
+.yellow{
+  color: #e2c044;
+}
+
+.green{
+  color: #4F8E75;
+}
+
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2, h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+/*Font Color*/
+.blue-contents h2{
+  color:#23b5d3;
+}
+
+.yellow-contents h2{
+  color:#e2c044;
+}
+
+.green-contents h2{
+  color:#3f696d;
+}
+
+/*Links*/
+.blue-contents a{
+  font-weight: 500;
+  color:#23b5d3;
+}
+
+.yellow-contents a{
+  font-weight: 500;
+  color:#e2c044;
+}
+
+.green-contents a{
+  font-weight: 500;
+  color:#3f696d;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+#time{
+  text-align: center;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#container{
+/*Size of the nav bar height*/
+  /*Originally just this*/
+  display: flex;
+}
+
+section{
+  width: 50%;
+}
+
+.left-outline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  /* border: solid 2px orange; */
+}
+
+.left-outline img{
+  /* margin-top: -10%; */
+  max-width: 50%;
+  height:auto;
+  width:auto;
+  border: 10px solid #282b2d;
+}
+
+.left-blue{
+  background-color: #23b5d3;
+}
+
+.left-yellow{
+  background-color: #e2c044;
+}
+
+.left-green{
+  background-color:#4F8E75;
+}
+
+/*
+#futureTech, #unitrans, #roboto, #mobileDesktop, #coreModel{
+  border: 10px solid #282b2d;
+} */
+
+/*Had to use this to cheat way through of having the scroll types
+switch whent he screen size was on mobile. On web I have it so the
+right page content is scrollable, but the page itself is not.*/
+@media (min-width: 700px) {
+  body{
+    overflow-y: hidden;
+  }
+  #right-outline{
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 700px){
+  #logo{
+    left:0;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  #time{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+
+  .left-outline{
+    width:100%;
+    height:auto;
+    float:none;
+  }
+
+  #right-outline{
+    position: absolute;
+    top:100%;
+    width:100%;
+    float:none;
+    /* overflow-y: hidden; */
+  }
+
+  #right-contents p img{
+    display: none;
+  }
+
+  .left-outline img{
+    /* margin-top: -10%; */
+    max-width: 80%;
+    height:auto;
+    width:auto;
+  }
+}
+
+
+#right-outline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 10%;
+  right:0px;
+  height: 65%;
+  display: block;
+}
+
+#right-contents{
+  padding: 60px 60px 60px 60px;
+}
+
+#right-outline::-webkit-scrollbar {
+    display: none;
+}
+
+#right-outline img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  width:75%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li{
+  list-style-type: none;
+}
+
+.footer{
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #282b2d;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+}
+
+footer a{
+  color:white;
+  text-decoration: none;
+}
+
+footer a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+#side-buttons #previous{
+  clear:both;
+  /* border: solid 2px red; */
+  position: absolute;
+  float: left;
+  width : 100px;
+  padding:20px;
+  top:0;
+  left:0px;
+  text-align: center;
+}
+
+#side-buttons #next{
+  position: absolute;
+  float: right;
+  width : 100px;
+  padding:20px;
+  top:0;
+  text-align: center;
+  right:30px;
+}
+
+#validator{
+  top: 20px;
+  left: -20px;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  width:100%;
+  font-size:15px;
+}
+
+
+#side-buttons #previous:hover{
+  background-color:#606060;
+    color:white;
+}
+
+#side-buttons #next:hover{
+  background-color:#606060;
+  color:white;
+}
