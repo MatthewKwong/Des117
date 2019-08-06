@@ -1,3 +1,10 @@
 html-css-visual-quickstart-guide.pdf
 MarkupPracticepart1
 syllabus.pdf
+
+#ignore Mac system files
+*.DS_Store
+
+#ignore Photoshop and Illustrator files
+*.ai
+#.psd
